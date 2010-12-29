@@ -3,8 +3,7 @@ Unity Wrapper v1.0 Alpha
 
 Release Notes:
 --------------
-
-To use this wrapper simply run Unity and load the project from the "UnitySampleProject" directory.
+To use this wrapper simply run Unity 3 Free/Pro edition and load the project from the "UnitySampleProject" directory.
 Afterwards click on the "Play" button to start the sample soldier project.
 (If you see a blank screen, click on the "WalkRunIdleBlend" script from the "Project" tab under the "Soldier Blend Advanced" section.
 
@@ -16,11 +15,13 @@ Build Notes (for Win32):
 ------------------------
 
 Requirements:
-	1) Unity 3.1 (http://unity3d.com/unity/download/)
-	   Direct link: http://download.unity3d.com/download_unity/UnitySetup-3.1.0.exe
+	1) Unity Engine 3.1 (http://unity3d.com/unity/download/)
+	   Direct link: http://download.unity3d.com/download_unity/UnitySetup-3.1.0.exe	   
 	2) OpenNI (www.openni.org)
 	3) Sensor device module for OpenNI (www.openni.org)
 	4) NITE modules for OpenNI (www.openni.org)
+	
+	Note: Both the PRO and Free editions are fully supported!
 	   
 Building UnityInterface:
 	1) Open the "UnityInterface.sln" solution file in Visual Studio 2008 or 2010 and rebuild the project. 
