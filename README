@@ -1,28 +1,10 @@
-Unity Wrapper v1.0 Alpha
+Unity Wrapper v1.01 Alpha
 ------------------------
 
 Release Notes:
 --------------
-To use this wrapper simply run Unity 3 Free/Pro edition and load the project from the "UnitySampleProject" directory.
-Afterwards click on the "Play" button to start the sample soldier project.
-(If you see a blank screen, click on the "WalkRunIdleBlend" script from the "Project" tab under the "Soldier Blend Advanced" section.
+This is the new .NET wrapper created by Amir Hirsch (tinkerer)
 
-Please note that the main DLL code for the interface is in "UnityInterface\UnityInterface.cpp " and the Unity NITE wrapper is in "UnitySampleProject\Assets\Nite.cs".
+This release is not exactly working, though it seems to start up the sensor correctly. I copied most of the code out of the UserTracker.NET example code.
 
-** Don't forget to start with the calibration pose! **
-
-Build Notes (for Win32):
-------------------------
-
-Requirements:
-	1) Unity Engine 3.1 (http://unity3d.com/unity/download/)
-	   Direct link: http://download.unity3d.com/download_unity/UnitySetup-3.1.0.exe	   
-	2) OpenNI (www.openni.org)
-	3) Sensor device module for OpenNI (www.openni.org)
-	4) NITE modules for OpenNI (www.openni.org)
-	
-	Note: Both the PRO and Free editions are fully supported!
-	   
-Building UnityInterface:
-	1) Open the "UnityInterface.sln" solution file in Visual Studio 2008 or 2010 and rebuild the project. 
-	   The DLL file will be created inside the "Bin" directory.
+Unity seems to freeze every second time you run this...
