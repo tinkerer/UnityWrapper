@@ -16,6 +16,9 @@ using System.Threading;using System.Text; using xn;using xnv;public class N
     uint usersMapSize;
     short[] usersLabelMap;
     short[] usersDepthMap;
+    MapData<ushort> LabelMap;
+    MapData<ushort> DepthMap;
+    
     float[] usersHistogramMap;
 		DepthMetaData depthMD;
 		
@@ -70,12 +73,15 @@ using System.Threading;using System.Text; using xn;using xnv;public class N
 
 //			this.bitmap = new Bitmap((int)mapMode.nXRes, (int)mapMode.nYRes/*, System.Drawing.Imaging.PixelFormat.Format24bppRgb*/);
 			usersLblTex = new Texture2D((int)mapMode.nXRes, (int)mapMode.nYRes);
+		Debug.Log("usersLblTex = w: "+ usersLblTex.width + " h: " + usersLblTex.height );
+
 
 			usersMapSize = mapMode.nXRes * mapMode.nYRes;
 			usersMapColors = new Color[usersMapSize];
         	usersMapRect = new Rect(Screen.width - usersLblTex.width / 2, Screen.height - usersLblTex.height / 2, usersLblTex.width / 2, usersLblTex.height / 2);
         usersLabelMap = new short[usersMapSize];
         usersDepthMap = new short[usersMapSize];
+
         usersHistogramMap = new float[5000];
 
 
@@ -161,7 +167,7 @@ using System.Threading;using System.Text; using xn;using xnv;public class N
 				pos.position = this.depth.ConvertRealWorldToProjective(pos.position);
 			}
 			this.joints[user][joint] = pos;
-			Debug.Log("user: "+user+" joint: "+joint + "pos: "+pos.position);
+		
         }
 
         private void GetJoints(uint user)
@@ -200,10 +206,11 @@ using System.Threading;using System.Text; using xn;using xnv;public class N
         //Marshal.Copy(NiteWrapper.GetUsersLabelMap(), usersLabelMap, 0, usersMapSize);
         //Marshal.Copy(NiteWrapper.GetUsersDepthMap(), usersDepthMap, 0, usersMapSize);
 		
-//		this.depth.GetMetaData(depthMD);
+		//this.depth.GetMetaData(depthMD);
 		
 		
-		
+		DepthMap = this.depth.GetDepthMap();
+		LabelMap = this.userGenerator.GetUserPixels(0).GetSceneMap();
 		
         // we will be flipping the texture as we convert label map to color array
         int flipIndex, i;
@@ -217,13 +224,15 @@ using System.Threading;using System.Text; using xn;using xnv;public class N
         
         
             // only calculate for depth that contains users
-            if (usersLabelMap[i] != 0)
+            //if (usersLabelMap[i] != 0)
+			if (LabelMap[i] != 0)
+
             {
             	
             	
             	
-                usersHistogramMap[usersDepthMap[i]]++;
-                
+//                usersHistogramMap[usersDepthMap[i]]++;
+                  usersHistogramMap[DepthMap[i]]++;              
                 
                 
                 numOfPoints++;
@@ -255,8 +264,9 @@ using System.Threading;using System.Text; using xn;using xnv;public class N
             flipIndex = (int)usersMapSize - i - 1;
             
             
-            if (usersLabelMap[i] == 0)
-            
+        //    if (usersLabelMap[i] == 0)
+              if (LabelMap[i] == 0)
+  
             
             {
             	
@@ -271,8 +281,11 @@ using System.Threading;using System.Text; using xn;using xnv;public class N
             	
             	
                 // create a blending color based on the depth histogram
-       Color c = new Color(usersHistogramMap[usersDepthMap[i]], usersHistogramMap[usersDepthMap[i]], usersHistogramMap[usersDepthMap[i]], 0.9f);
-                switch (usersLabelMap[i] % 4)
+       //Color c = new Color(usersHistogramMap[usersDepthMap[i]], usersHistogramMap[usersDepthMap[i]], usersHistogramMap[usersDepthMap[i]], 0.9f);
+       Color c = new Color(usersHistogramMap[DepthMap[i]], usersHistogramMap[DepthMap[i]], usersHistogramMap[DepthMap[i]], 0.9f);
+            //    switch (usersLabelMap[i] % 4)
+                switch (LabelMap[i] % 4)
+
                 {
                     case 0:
                         usersMapColors[flipIndex] = Color.red * c;
