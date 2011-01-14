@@ -1,0 +1,560 @@
+<html>
+  <head>
+    <title>xn.MapGenerator</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+      a { text-decoration: none }
+
+      div.SideBar {
+        padding-left: 1em;
+        padding-right: 1em;
+        right: 0;
+        float: right;
+        border: thin solid black;
+        background-color: #f2f2f2;
+      }
+    
+      .CollectionTitle { font-weight: bold }
+      .PageTitle { font-size: 150%; font-weight: bold }
+
+      .Summary { }
+      .Signature { }          
+      .Remarks { }
+      .Members { }
+      .Copyright { }
+      
+      .Section { font-size: 125%; font-weight: bold }
+      p.Summary {
+        margin-left: 1em;
+      }
+      .SectionBox { margin-left: 2em }
+      .NamespaceName { font-size: 105%; font-weight: bold }
+      .NamespaceSumary { }
+      .MemberName { font-size: 115%; font-weight: bold; margin-top: 1em }
+      .Subsection { font-size: 105%; font-weight: bold }
+      .SubsectionBox { margin-left: 2em; margin-bottom: 1em }
+
+      .CodeExampleTable { background-color: #f5f5dd; border: thin solid black; padding: .25em; }
+      
+      .TypesListing {
+        border-collapse: collapse;
+      }
+
+      td {
+        vertical-align: top;
+      }
+      th {
+        text-align: left;
+      }
+
+      .TypesListing td { 
+        margin: 0px;  
+        padding: .25em;
+        border: solid gray 1px;
+      }
+
+      .TypesListing th { 
+        margin: 0px;  
+        padding: .25em;
+        background-color: #f2f2f2;
+        border: solid gray 1px;
+      }
+
+      div.Footer {
+        border-top: 1px solid gray;
+        margin-top: 1.5em;
+        padding-top: 0.6em;
+        text-align: center;
+        color: gray;
+      }
+
+      span.NotEntered /* Documentation for this section has not yet been entered */ {
+        font-style: italic;
+        color: red;	
+      }
+
+      div.Header {
+        background: #B0C4DE;
+        border: double;
+        border-color: white;
+        border-width: 7px;
+        padding: 0.5em;
+      }
+
+      div.Header * {
+        font-size: smaller;
+      }
+
+      div.Note {
+      }
+
+      i.ParamRef {
+      }
+
+      i.subtitle {
+      }
+
+      ul.TypeMembersIndex {
+        text-align: left;
+        background: #F8F8F8;
+      }
+
+      ul.TypeMembersIndex li {
+        display: inline;
+        margin:  0.5em;
+      }
+
+      table.HeaderTable {
+      }
+
+      table.SignatureTable {
+      }
+
+      table.Documentation, table.Enumeration, table.TypeDocumentation {
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      table.Documentation tr th, table.TypeMembers tr th, table.Enumeration tr th, table.TypeDocumentation tr th {
+        background: whitesmoke;
+        padding: 0.8em;
+        border: 1px solid gray;
+        text-align: left;
+        vertical-align: bottom;
+      }
+
+      table.Documentation tr td, table.TypeMembers tr td, table.Enumeration tr td, table.TypeDocumentation tr td {
+        padding: 0.5em;
+        border: 1px solid gray;
+        text-align: left;
+        vertical-align: top;
+      }
+
+      table.TypeMembers {
+        border: 1px solid #C0C0C0;
+        width: 100%;
+      }
+
+      table.TypeMembers tr td {
+        background: #F8F8F8;
+        border: white;
+      }
+
+      table.Documentation {
+      }
+
+      table.TypeMembers {
+      }
+
+      div.CodeExample {
+        width: 100%;
+        border: 1px solid #DDDDDD;
+        background-color: #F8F8F8;
+      }
+
+      div.CodeExample p {
+        margin: 0.5em;
+        border-bottom: 1px solid #DDDDDD;
+      }
+
+      div.CodeExample div {
+        margin: 0.5em;
+      }
+
+      h4 {
+        margin-bottom: 0;
+      }
+
+      div.Signature {
+        border: 1px solid #C0C0C0;
+        background: #F2F2F2;
+        padding: 1em;
+      }
+    </style>
+    <script type="text/JavaScript">
+      function toggle_display (block) {
+        var w = document.getElementById (block);
+        var t = document.getElementById (block + ":toggle");
+        if (w.style.display == "none") {
+          w.style.display = "block";
+          t.innerHTML = "⊟";
+        } else {
+          w.style.display = "none";
+          t.innerHTML = "⊞";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="CollectionTitle">
+      <a href="../index.html">OpenNI.net</a> : <a href="index.html">xn Namespace</a></div>
+    <div class="SideBar">
+      <p>
+        <a href="#T:xn.MapGenerator">Overview</a>
+      </p>
+      <p>
+        <a href="#T:xn.MapGenerator:Signature">Signature</a>
+      </p>
+      <p>
+        <a href="#T:xn.MapGenerator:Docs">Remarks</a>
+      </p>
+      <p>
+        <a href="#Members">Members</a>
+      </p>
+      <p>
+        <a href="#T:xn.MapGenerator:Members">Member Details</a>
+      </p>
+    </div>
+    <h1 class="PageTitle" id="T:xn.MapGenerator">MapGenerator  Class</h1>
+    <p class="Summary" id="T:xn.MapGenerator:Summary">
+      <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+    </p>
+    <div id="T:xn.MapGenerator:Signature">
+      <div class="Signature">public class  <b>MapGenerator</b> : <a href="../xn/Generator.html">Generator</a></div>
+    </div>
+    <div class="Remarks" id="T:xn.MapGenerator:Docs">
+      <h4 class="Subsection">
+        <a href="javascript:toggle_display('T:xn.MapGenerator:Docs:Remarks')">
+          <span id="T:xn.MapGenerator:Docs:Remarks:toggle">⊟</span> Remarks</a>
+      </h4>
+      <blockquote class="SubsectionBox" id="T:xn.MapGenerator:Docs:Remarks">
+        <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+      </blockquote>
+      <h4 class="Subsection">
+        <a href="javascript:toggle_display('T:xn.MapGenerator:Docs:Version Information')">
+          <span id="T:xn.MapGenerator:Docs:Version Information:toggle">⊟</span> Requirements</a>
+      </h4>
+      <blockquote class="SubsectionBox" id="T:xn.MapGenerator:Docs:Version Information">
+        <b>Namespace: </b>xn<br /><b>Assembly: </b>OpenNI.net (in OpenNI.net.dll)<br /><b>Assembly Versions: </b>1.0.0.25</blockquote>
+      <h2 class="Section" id="Members">
+        <a href="javascript:toggle_display('_Members')">
+          <span id="_Members:toggle">⊟</span> Members</a>
+      </h2>
+      <blockquote class="SectionBox" id="_Members">
+        <p>
+								See Also: Inherited members from
+								<a href="../xn/Generator.html">Generator</a>.
+							</p>
+        <h3>
+          <a href="javascript:toggle_display('Public Methods')">
+            <span id="Public Methods:toggle">⊟</span> Public Methods</a>
+        </h3>
+        <blockquote id="Public Methods">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:xn.MapGenerator.GetCroppingCap">GetCroppingCap</a>
+                  </b>()<nobr> : <a href="../xn/CroppingCapability.html">CroppingCapability</a></nobr><blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:xn.MapGenerator.GetMapOutputMode">GetMapOutputMode</a>
+                  </b>()<nobr> : <a href="../xn/MapOutputMode.html">MapOutputMode</a></nobr><blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:xn.MapGenerator.GetSupportedMapOutputModes">GetSupportedMapOutputModes</a>
+                  </b>()<nobr> : <a href="../xn/MapOutputMode.html">MapOutputMode</a>[]</nobr><blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:xn.MapGenerator.SetMapOutputMode(xn.MapOutputMode)">SetMapOutputMode</a>
+                  </b>(<a href="../xn/MapOutputMode.html">MapOutputMode</a>)<blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+            </table>
+          </div>
+        </blockquote>
+        <h3>
+          <a href="javascript:toggle_display('Protected Methods')">
+            <span id="Protected Methods:toggle">⊟</span> Protected Methods</a>
+        </h3>
+        <blockquote id="Protected Methods">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:xn.MapGenerator.GetMapData``1(System.IntPtr)">GetMapData&lt;T&gt;</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.IntPtr">IntPtr</a>)<nobr> : <a href="../xn/MapData`1.html">MapData&lt;T&gt;</a></nobr><blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+            </table>
+          </div>
+        </blockquote>
+        <h3>
+          <a href="javascript:toggle_display('Public Events')">
+            <span id="Public Events:toggle">⊟</span> Public Events</a>
+        </h3>
+        <blockquote id="Public Events">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="#E:xn.MapGenerator.MapOutputModeChanged">MapOutputModeChanged</a>
+                  </b>
+                </td>
+                <td>
+                  <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </blockquote>
+      </blockquote>
+    </div>
+    <div class="Members" id="T:xn.MapGenerator:Members">
+      <h2 class="Section" id="MemberDetails">
+        <a href="javascript:toggle_display('_MemberDetails')">
+          <span id="_MemberDetails:toggle">⊟</span> Member Details</a>
+      </h2>
+      <blockquote class="SectionBox" id="_MemberDetails">
+        <h3 id="M:xn.MapGenerator.GetCroppingCap">
+          <a href="javascript:toggle_display('M:xn.MapGenerator.GetCroppingCap:member')">
+            <span id="M:xn.MapGenerator.GetCroppingCap:member:toggle">⊟</span> GetCroppingCap Method</a>
+        </h3>
+        <blockquote id="M:xn.MapGenerator.GetCroppingCap:member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <div class="Signature">public <a href="../xn/CroppingCapability.html">CroppingCapability</a> <b>GetCroppingCap</b> ()</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xn.MapGenerator.GetCroppingCap:Returns')">
+              <span id="M:xn.MapGenerator.GetCroppingCap:Returns:toggle">⊟</span> Returns</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xn.MapGenerator.GetCroppingCap:Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xn.MapGenerator.GetCroppingCap:Remarks')">
+              <span id="M:xn.MapGenerator.GetCroppingCap:Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xn.MapGenerator.GetCroppingCap:Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xn.MapGenerator.GetCroppingCap:Version Information')">
+              <span id="M:xn.MapGenerator.GetCroppingCap:Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xn.MapGenerator.GetCroppingCap:Version Information">
+            <b>Namespace: </b>xn<br /><b>Assembly: </b>OpenNI.net (in OpenNI.net.dll)<br /><b>Assembly Versions: </b>1.0.0.25</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:xn.MapGenerator.GetMapData``1(System.IntPtr)">
+          <a href="javascript:toggle_display('M:xn.MapGenerator.GetMapData``1(System.IntPtr):member')">
+            <span id="M:xn.MapGenerator.GetMapData``1(System.IntPtr):member:toggle">⊟</span> GetMapData&lt;T&gt; Generic Method</a>
+        </h3>
+        <blockquote id="M:xn.MapGenerator.GetMapData``1(System.IntPtr):member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <div class="Signature">protected <a href="../xn/MapData`1.html">MapData&lt;T&gt;</a> <b>GetMapData&lt;T&gt;</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.IntPtr">IntPtr</a> pData)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xn.MapGenerator.GetMapData``1(System.IntPtr):Type Parameters')">
+              <span id="M:xn.MapGenerator.GetMapData``1(System.IntPtr):Type Parameters:toggle">⊟</span> Type Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xn.MapGenerator.GetMapData``1(System.IntPtr):Type Parameters">
+            <dl>
+              <dt>
+                <i>T</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xn.MapGenerator.GetMapData``1(System.IntPtr):Parameters')">
+              <span id="M:xn.MapGenerator.GetMapData``1(System.IntPtr):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xn.MapGenerator.GetMapData``1(System.IntPtr):Parameters">
+            <dl>
+              <dt>
+                <i>pData</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xn.MapGenerator.GetMapData``1(System.IntPtr):Returns')">
+              <span id="M:xn.MapGenerator.GetMapData``1(System.IntPtr):Returns:toggle">⊟</span> Returns</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xn.MapGenerator.GetMapData``1(System.IntPtr):Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xn.MapGenerator.GetMapData``1(System.IntPtr):Remarks')">
+              <span id="M:xn.MapGenerator.GetMapData``1(System.IntPtr):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xn.MapGenerator.GetMapData``1(System.IntPtr):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xn.MapGenerator.GetMapData``1(System.IntPtr):Version Information')">
+              <span id="M:xn.MapGenerator.GetMapData``1(System.IntPtr):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xn.MapGenerator.GetMapData``1(System.IntPtr):Version Information">
+            <b>Namespace: </b>xn<br /><b>Assembly: </b>OpenNI.net (in OpenNI.net.dll)<br /><b>Assembly Versions: </b>1.0.0.25</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:xn.MapGenerator.GetMapOutputMode">
+          <a href="javascript:toggle_display('M:xn.MapGenerator.GetMapOutputMode:member')">
+            <span id="M:xn.MapGenerator.GetMapOutputMode:member:toggle">⊟</span> GetMapOutputMode Method</a>
+        </h3>
+        <blockquote id="M:xn.MapGenerator.GetMapOutputMode:member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <div class="Signature">public <a href="../xn/MapOutputMode.html">MapOutputMode</a> <b>GetMapOutputMode</b> ()</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xn.MapGenerator.GetMapOutputMode:Returns')">
+              <span id="M:xn.MapGenerator.GetMapOutputMode:Returns:toggle">⊟</span> Returns</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xn.MapGenerator.GetMapOutputMode:Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xn.MapGenerator.GetMapOutputMode:Remarks')">
+              <span id="M:xn.MapGenerator.GetMapOutputMode:Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xn.MapGenerator.GetMapOutputMode:Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xn.MapGenerator.GetMapOutputMode:Version Information')">
+              <span id="M:xn.MapGenerator.GetMapOutputMode:Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xn.MapGenerator.GetMapOutputMode:Version Information">
+            <b>Namespace: </b>xn<br /><b>Assembly: </b>OpenNI.net (in OpenNI.net.dll)<br /><b>Assembly Versions: </b>1.0.0.25</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:xn.MapGenerator.GetSupportedMapOutputModes">
+          <a href="javascript:toggle_display('M:xn.MapGenerator.GetSupportedMapOutputModes:member')">
+            <span id="M:xn.MapGenerator.GetSupportedMapOutputModes:member:toggle">⊟</span> GetSupportedMapOutputModes Method</a>
+        </h3>
+        <blockquote id="M:xn.MapGenerator.GetSupportedMapOutputModes:member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <div class="Signature">public <a href="../xn/MapOutputMode.html">MapOutputMode</a>[] <b>GetSupportedMapOutputModes</b> ()</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xn.MapGenerator.GetSupportedMapOutputModes:Returns')">
+              <span id="M:xn.MapGenerator.GetSupportedMapOutputModes:Returns:toggle">⊟</span> Returns</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xn.MapGenerator.GetSupportedMapOutputModes:Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xn.MapGenerator.GetSupportedMapOutputModes:Remarks')">
+              <span id="M:xn.MapGenerator.GetSupportedMapOutputModes:Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xn.MapGenerator.GetSupportedMapOutputModes:Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xn.MapGenerator.GetSupportedMapOutputModes:Version Information')">
+              <span id="M:xn.MapGenerator.GetSupportedMapOutputModes:Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xn.MapGenerator.GetSupportedMapOutputModes:Version Information">
+            <b>Namespace: </b>xn<br /><b>Assembly: </b>OpenNI.net (in OpenNI.net.dll)<br /><b>Assembly Versions: </b>1.0.0.25</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="E:xn.MapGenerator.MapOutputModeChanged">
+          <a href="javascript:toggle_display('E:xn.MapGenerator.MapOutputModeChanged:member')">
+            <span id="E:xn.MapGenerator.MapOutputModeChanged:member:toggle">⊟</span> MapOutputModeChanged Event</a>
+        </h3>
+        <blockquote id="E:xn.MapGenerator.MapOutputModeChanged:member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <div class="Signature">public event <a href="../xn/StateChangedHandler.html">StateChangedHandler</a> <b>MapOutputModeChanged</b> </div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('E:xn.MapGenerator.MapOutputModeChanged:Remarks')">
+              <span id="E:xn.MapGenerator.MapOutputModeChanged:Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="E:xn.MapGenerator.MapOutputModeChanged:Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('E:xn.MapGenerator.MapOutputModeChanged:Version Information')">
+              <span id="E:xn.MapGenerator.MapOutputModeChanged:Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="E:xn.MapGenerator.MapOutputModeChanged:Version Information">
+            <b>Namespace: </b>xn<br /><b>Assembly: </b>OpenNI.net (in OpenNI.net.dll)<br /><b>Assembly Versions: </b>1.0.0.25</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:xn.MapGenerator.SetMapOutputMode(xn.MapOutputMode)">
+          <a href="javascript:toggle_display('M:xn.MapGenerator.SetMapOutputMode(xn.MapOutputMode):member')">
+            <span id="M:xn.MapGenerator.SetMapOutputMode(xn.MapOutputMode):member:toggle">⊟</span> SetMapOutputMode Method</a>
+        </h3>
+        <blockquote id="M:xn.MapGenerator.SetMapOutputMode(xn.MapOutputMode):member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>SetMapOutputMode</b> (<a href="../xn/MapOutputMode.html">MapOutputMode</a> mode)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xn.MapGenerator.SetMapOutputMode(xn.MapOutputMode):Parameters')">
+              <span id="M:xn.MapGenerator.SetMapOutputMode(xn.MapOutputMode):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xn.MapGenerator.SetMapOutputMode(xn.MapOutputMode):Parameters">
+            <dl>
+              <dt>
+                <i>mode</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xn.MapGenerator.SetMapOutputMode(xn.MapOutputMode):Remarks')">
+              <span id="M:xn.MapGenerator.SetMapOutputMode(xn.MapOutputMode):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xn.MapGenerator.SetMapOutputMode(xn.MapOutputMode):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xn.MapGenerator.SetMapOutputMode(xn.MapOutputMode):Version Information')">
+              <span id="M:xn.MapGenerator.SetMapOutputMode(xn.MapOutputMode):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xn.MapGenerator.SetMapOutputMode(xn.MapOutputMode):Version Information">
+            <b>Namespace: </b>xn<br /><b>Assembly: </b>OpenNI.net (in OpenNI.net.dll)<br /><b>Assembly Versions: </b>1.0.0.25</blockquote>
+          <hr size="1" />
+        </blockquote>
+      </blockquote>
+    </div>
+    <hr size="1" />
+    <div class="Copyright">
+    </div>
+  </body>
+</html>

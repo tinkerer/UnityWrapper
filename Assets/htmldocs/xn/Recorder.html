@@ -1,0 +1,622 @@
+<html>
+  <head>
+    <title>xn.Recorder</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+      a { text-decoration: none }
+
+      div.SideBar {
+        padding-left: 1em;
+        padding-right: 1em;
+        right: 0;
+        float: right;
+        border: thin solid black;
+        background-color: #f2f2f2;
+      }
+    
+      .CollectionTitle { font-weight: bold }
+      .PageTitle { font-size: 150%; font-weight: bold }
+
+      .Summary { }
+      .Signature { }          
+      .Remarks { }
+      .Members { }
+      .Copyright { }
+      
+      .Section { font-size: 125%; font-weight: bold }
+      p.Summary {
+        margin-left: 1em;
+      }
+      .SectionBox { margin-left: 2em }
+      .NamespaceName { font-size: 105%; font-weight: bold }
+      .NamespaceSumary { }
+      .MemberName { font-size: 115%; font-weight: bold; margin-top: 1em }
+      .Subsection { font-size: 105%; font-weight: bold }
+      .SubsectionBox { margin-left: 2em; margin-bottom: 1em }
+
+      .CodeExampleTable { background-color: #f5f5dd; border: thin solid black; padding: .25em; }
+      
+      .TypesListing {
+        border-collapse: collapse;
+      }
+
+      td {
+        vertical-align: top;
+      }
+      th {
+        text-align: left;
+      }
+
+      .TypesListing td { 
+        margin: 0px;  
+        padding: .25em;
+        border: solid gray 1px;
+      }
+
+      .TypesListing th { 
+        margin: 0px;  
+        padding: .25em;
+        background-color: #f2f2f2;
+        border: solid gray 1px;
+      }
+
+      div.Footer {
+        border-top: 1px solid gray;
+        margin-top: 1.5em;
+        padding-top: 0.6em;
+        text-align: center;
+        color: gray;
+      }
+
+      span.NotEntered /* Documentation for this section has not yet been entered */ {
+        font-style: italic;
+        color: red;	
+      }
+
+      div.Header {
+        background: #B0C4DE;
+        border: double;
+        border-color: white;
+        border-width: 7px;
+        padding: 0.5em;
+      }
+
+      div.Header * {
+        font-size: smaller;
+      }
+
+      div.Note {
+      }
+
+      i.ParamRef {
+      }
+
+      i.subtitle {
+      }
+
+      ul.TypeMembersIndex {
+        text-align: left;
+        background: #F8F8F8;
+      }
+
+      ul.TypeMembersIndex li {
+        display: inline;
+        margin:  0.5em;
+      }
+
+      table.HeaderTable {
+      }
+
+      table.SignatureTable {
+      }
+
+      table.Documentation, table.Enumeration, table.TypeDocumentation {
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      table.Documentation tr th, table.TypeMembers tr th, table.Enumeration tr th, table.TypeDocumentation tr th {
+        background: whitesmoke;
+        padding: 0.8em;
+        border: 1px solid gray;
+        text-align: left;
+        vertical-align: bottom;
+      }
+
+      table.Documentation tr td, table.TypeMembers tr td, table.Enumeration tr td, table.TypeDocumentation tr td {
+        padding: 0.5em;
+        border: 1px solid gray;
+        text-align: left;
+        vertical-align: top;
+      }
+
+      table.TypeMembers {
+        border: 1px solid #C0C0C0;
+        width: 100%;
+      }
+
+      table.TypeMembers tr td {
+        background: #F8F8F8;
+        border: white;
+      }
+
+      table.Documentation {
+      }
+
+      table.TypeMembers {
+      }
+
+      div.CodeExample {
+        width: 100%;
+        border: 1px solid #DDDDDD;
+        background-color: #F8F8F8;
+      }
+
+      div.CodeExample p {
+        margin: 0.5em;
+        border-bottom: 1px solid #DDDDDD;
+      }
+
+      div.CodeExample div {
+        margin: 0.5em;
+      }
+
+      h4 {
+        margin-bottom: 0;
+      }
+
+      div.Signature {
+        border: 1px solid #C0C0C0;
+        background: #F2F2F2;
+        padding: 1em;
+      }
+    </style>
+    <script type="text/JavaScript">
+      function toggle_display (block) {
+        var w = document.getElementById (block);
+        var t = document.getElementById (block + ":toggle");
+        if (w.style.display == "none") {
+          w.style.display = "block";
+          t.innerHTML = "⊟";
+        } else {
+          w.style.display = "none";
+          t.innerHTML = "⊞";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="CollectionTitle">
+      <a href="../index.html">OpenNI.net</a> : <a href="index.html">xn Namespace</a></div>
+    <div class="SideBar">
+      <p>
+        <a href="#T:xn.Recorder">Overview</a>
+      </p>
+      <p>
+        <a href="#T:xn.Recorder:Signature">Signature</a>
+      </p>
+      <p>
+        <a href="#T:xn.Recorder:Docs">Remarks</a>
+      </p>
+      <p>
+        <a href="#Members">Members</a>
+      </p>
+      <p>
+        <a href="#T:xn.Recorder:Members">Member Details</a>
+      </p>
+    </div>
+    <h1 class="PageTitle" id="T:xn.Recorder">Recorder  Class</h1>
+    <p class="Summary" id="T:xn.Recorder:Summary">
+      <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+    </p>
+    <div id="T:xn.Recorder:Signature">
+      <div class="Signature">public class  <b>Recorder</b> : <a href="../xn/ProductionNode.html">ProductionNode</a></div>
+    </div>
+    <div class="Remarks" id="T:xn.Recorder:Docs">
+      <h4 class="Subsection">
+        <a href="javascript:toggle_display('T:xn.Recorder:Docs:Remarks')">
+          <span id="T:xn.Recorder:Docs:Remarks:toggle">⊟</span> Remarks</a>
+      </h4>
+      <blockquote class="SubsectionBox" id="T:xn.Recorder:Docs:Remarks">
+        <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+      </blockquote>
+      <h4 class="Subsection">
+        <a href="javascript:toggle_display('T:xn.Recorder:Docs:Version Information')">
+          <span id="T:xn.Recorder:Docs:Version Information:toggle">⊟</span> Requirements</a>
+      </h4>
+      <blockquote class="SubsectionBox" id="T:xn.Recorder:Docs:Version Information">
+        <b>Namespace: </b>xn<br /><b>Assembly: </b>OpenNI.net (in OpenNI.net.dll)<br /><b>Assembly Versions: </b>1.0.0.25</blockquote>
+      <h2 class="Section" id="Members">
+        <a href="javascript:toggle_display('_Members')">
+          <span id="_Members:toggle">⊟</span> Members</a>
+      </h2>
+      <blockquote class="SectionBox" id="_Members">
+        <p>
+								See Also: Inherited members from
+								<a href="../xn/ProductionNode.html">ProductionNode</a>.
+							</p>
+        <h3>
+          <a href="javascript:toggle_display('Public Constructors')">
+            <span id="Public Constructors:toggle">⊟</span> Public Constructors</a>
+        </h3>
+        <blockquote id="Public Constructors">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <div>
+                    <b>
+                      <a href="#C:xn.Recorder(xn.Context)">Recorder</a>
+                    </b>(<a href="../xn/Context.html">Context</a>)</div>
+                </td>
+                <td>
+                  <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+                </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <div>
+                    <b>
+                      <a href="#C:xn.Recorder(xn.Context,System.String)">Recorder</a>
+                    </b>(<a href="../xn/Context.html">Context</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)</div>
+                </td>
+                <td>
+                  <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </blockquote>
+        <h3>
+          <a href="javascript:toggle_display('Public Methods')">
+            <span id="Public Methods:toggle">⊟</span> Public Methods</a>
+        </h3>
+        <blockquote id="Public Methods">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:xn.Recorder.AddNodeToRecording(xn.ProductionNode)">AddNodeToRecording</a>
+                  </b>(<a href="../xn/ProductionNode.html">ProductionNode</a>)<blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:xn.Recorder.AddNodeToRecording(xn.ProductionNode,xn.CodecID)">AddNodeToRecording</a>
+                  </b>(<a href="../xn/ProductionNode.html">ProductionNode</a>, <a href="../xn/CodecID.html">CodecID</a>)<blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:xn.Recorder.Record">Record</a>
+                  </b>()<blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:xn.Recorder.RemoveNodeFromRecording(xn.ProductionNode)">RemoveNodeFromRecording</a>
+                  </b>(<a href="../xn/ProductionNode.html">ProductionNode</a>)<blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:xn.Recorder.SetDestination(xn.RecordMedium,System.String)">SetDestination</a>
+                  </b>(<a href="../xn/RecordMedium.html">RecordMedium</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+            </table>
+          </div>
+        </blockquote>
+      </blockquote>
+    </div>
+    <div class="Members" id="T:xn.Recorder:Members">
+      <h2 class="Section" id="MemberDetails">
+        <a href="javascript:toggle_display('_MemberDetails')">
+          <span id="_MemberDetails:toggle">⊟</span> Member Details</a>
+      </h2>
+      <blockquote class="SectionBox" id="_MemberDetails">
+        <h3 id="C:xn.Recorder(xn.Context)">
+          <a href="javascript:toggle_display('C:xn.Recorder(xn.Context):member')">
+            <span id="C:xn.Recorder(xn.Context):member:toggle">⊟</span> Recorder Constructor</a>
+        </h3>
+        <blockquote id="C:xn.Recorder(xn.Context):member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <div class="Signature">public  <b>Recorder</b> (<a href="../xn/Context.html">Context</a> context)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('C:xn.Recorder(xn.Context):Parameters')">
+              <span id="C:xn.Recorder(xn.Context):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="C:xn.Recorder(xn.Context):Parameters">
+            <dl>
+              <dt>
+                <i>context</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('C:xn.Recorder(xn.Context):Remarks')">
+              <span id="C:xn.Recorder(xn.Context):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="C:xn.Recorder(xn.Context):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('C:xn.Recorder(xn.Context):Version Information')">
+              <span id="C:xn.Recorder(xn.Context):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="C:xn.Recorder(xn.Context):Version Information">
+            <b>Namespace: </b>xn<br /><b>Assembly: </b>OpenNI.net (in OpenNI.net.dll)<br /><b>Assembly Versions: </b>1.0.0.25</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="C:xn.Recorder(xn.Context,System.String)">
+          <a href="javascript:toggle_display('C:xn.Recorder(xn.Context,System.String):member')">
+            <span id="C:xn.Recorder(xn.Context,System.String):member:toggle">⊟</span> Recorder Constructor</a>
+        </h3>
+        <blockquote id="C:xn.Recorder(xn.Context,System.String):member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <div class="Signature">public  <b>Recorder</b> (<a href="../xn/Context.html">Context</a> context, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> formatName)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('C:xn.Recorder(xn.Context,System.String):Parameters')">
+              <span id="C:xn.Recorder(xn.Context,System.String):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="C:xn.Recorder(xn.Context,System.String):Parameters">
+            <dl>
+              <dt>
+                <i>context</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+              <dt>
+                <i>formatName</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('C:xn.Recorder(xn.Context,System.String):Remarks')">
+              <span id="C:xn.Recorder(xn.Context,System.String):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="C:xn.Recorder(xn.Context,System.String):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('C:xn.Recorder(xn.Context,System.String):Version Information')">
+              <span id="C:xn.Recorder(xn.Context,System.String):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="C:xn.Recorder(xn.Context,System.String):Version Information">
+            <b>Namespace: </b>xn<br /><b>Assembly: </b>OpenNI.net (in OpenNI.net.dll)<br /><b>Assembly Versions: </b>1.0.0.25</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:xn.Recorder.AddNodeToRecording(xn.ProductionNode)">
+          <a href="javascript:toggle_display('M:xn.Recorder.AddNodeToRecording(xn.ProductionNode):member')">
+            <span id="M:xn.Recorder.AddNodeToRecording(xn.ProductionNode):member:toggle">⊟</span> AddNodeToRecording Method</a>
+        </h3>
+        <blockquote id="M:xn.Recorder.AddNodeToRecording(xn.ProductionNode):member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>AddNodeToRecording</b> (<a href="../xn/ProductionNode.html">ProductionNode</a> node)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xn.Recorder.AddNodeToRecording(xn.ProductionNode):Parameters')">
+              <span id="M:xn.Recorder.AddNodeToRecording(xn.ProductionNode):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xn.Recorder.AddNodeToRecording(xn.ProductionNode):Parameters">
+            <dl>
+              <dt>
+                <i>node</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xn.Recorder.AddNodeToRecording(xn.ProductionNode):Remarks')">
+              <span id="M:xn.Recorder.AddNodeToRecording(xn.ProductionNode):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xn.Recorder.AddNodeToRecording(xn.ProductionNode):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xn.Recorder.AddNodeToRecording(xn.ProductionNode):Version Information')">
+              <span id="M:xn.Recorder.AddNodeToRecording(xn.ProductionNode):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xn.Recorder.AddNodeToRecording(xn.ProductionNode):Version Information">
+            <b>Namespace: </b>xn<br /><b>Assembly: </b>OpenNI.net (in OpenNI.net.dll)<br /><b>Assembly Versions: </b>1.0.0.25</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:xn.Recorder.AddNodeToRecording(xn.ProductionNode,xn.CodecID)">
+          <a href="javascript:toggle_display('M:xn.Recorder.AddNodeToRecording(xn.ProductionNode,xn.CodecID):member')">
+            <span id="M:xn.Recorder.AddNodeToRecording(xn.ProductionNode,xn.CodecID):member:toggle">⊟</span> AddNodeToRecording Method</a>
+        </h3>
+        <blockquote id="M:xn.Recorder.AddNodeToRecording(xn.ProductionNode,xn.CodecID):member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>AddNodeToRecording</b> (<a href="../xn/ProductionNode.html">ProductionNode</a> node, <a href="../xn/CodecID.html">CodecID</a> codec)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xn.Recorder.AddNodeToRecording(xn.ProductionNode,xn.CodecID):Parameters')">
+              <span id="M:xn.Recorder.AddNodeToRecording(xn.ProductionNode,xn.CodecID):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xn.Recorder.AddNodeToRecording(xn.ProductionNode,xn.CodecID):Parameters">
+            <dl>
+              <dt>
+                <i>node</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+              <dt>
+                <i>codec</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xn.Recorder.AddNodeToRecording(xn.ProductionNode,xn.CodecID):Remarks')">
+              <span id="M:xn.Recorder.AddNodeToRecording(xn.ProductionNode,xn.CodecID):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xn.Recorder.AddNodeToRecording(xn.ProductionNode,xn.CodecID):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xn.Recorder.AddNodeToRecording(xn.ProductionNode,xn.CodecID):Version Information')">
+              <span id="M:xn.Recorder.AddNodeToRecording(xn.ProductionNode,xn.CodecID):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xn.Recorder.AddNodeToRecording(xn.ProductionNode,xn.CodecID):Version Information">
+            <b>Namespace: </b>xn<br /><b>Assembly: </b>OpenNI.net (in OpenNI.net.dll)<br /><b>Assembly Versions: </b>1.0.0.25</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:xn.Recorder.Record">
+          <a href="javascript:toggle_display('M:xn.Recorder.Record:member')">
+            <span id="M:xn.Recorder.Record:member:toggle">⊟</span> Record Method</a>
+        </h3>
+        <blockquote id="M:xn.Recorder.Record:member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>Record</b> ()</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xn.Recorder.Record:Remarks')">
+              <span id="M:xn.Recorder.Record:Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xn.Recorder.Record:Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xn.Recorder.Record:Version Information')">
+              <span id="M:xn.Recorder.Record:Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xn.Recorder.Record:Version Information">
+            <b>Namespace: </b>xn<br /><b>Assembly: </b>OpenNI.net (in OpenNI.net.dll)<br /><b>Assembly Versions: </b>1.0.0.25</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:xn.Recorder.RemoveNodeFromRecording(xn.ProductionNode)">
+          <a href="javascript:toggle_display('M:xn.Recorder.RemoveNodeFromRecording(xn.ProductionNode):member')">
+            <span id="M:xn.Recorder.RemoveNodeFromRecording(xn.ProductionNode):member:toggle">⊟</span> RemoveNodeFromRecording Method</a>
+        </h3>
+        <blockquote id="M:xn.Recorder.RemoveNodeFromRecording(xn.ProductionNode):member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>RemoveNodeFromRecording</b> (<a href="../xn/ProductionNode.html">ProductionNode</a> node)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xn.Recorder.RemoveNodeFromRecording(xn.ProductionNode):Parameters')">
+              <span id="M:xn.Recorder.RemoveNodeFromRecording(xn.ProductionNode):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xn.Recorder.RemoveNodeFromRecording(xn.ProductionNode):Parameters">
+            <dl>
+              <dt>
+                <i>node</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xn.Recorder.RemoveNodeFromRecording(xn.ProductionNode):Remarks')">
+              <span id="M:xn.Recorder.RemoveNodeFromRecording(xn.ProductionNode):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xn.Recorder.RemoveNodeFromRecording(xn.ProductionNode):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xn.Recorder.RemoveNodeFromRecording(xn.ProductionNode):Version Information')">
+              <span id="M:xn.Recorder.RemoveNodeFromRecording(xn.ProductionNode):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xn.Recorder.RemoveNodeFromRecording(xn.ProductionNode):Version Information">
+            <b>Namespace: </b>xn<br /><b>Assembly: </b>OpenNI.net (in OpenNI.net.dll)<br /><b>Assembly Versions: </b>1.0.0.25</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:xn.Recorder.SetDestination(xn.RecordMedium,System.String)">
+          <a href="javascript:toggle_display('M:xn.Recorder.SetDestination(xn.RecordMedium,System.String):member')">
+            <span id="M:xn.Recorder.SetDestination(xn.RecordMedium,System.String):member:toggle">⊟</span> SetDestination Method</a>
+        </h3>
+        <blockquote id="M:xn.Recorder.SetDestination(xn.RecordMedium,System.String):member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>SetDestination</b> (<a href="../xn/RecordMedium.html">RecordMedium</a> medium, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> dest)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xn.Recorder.SetDestination(xn.RecordMedium,System.String):Parameters')">
+              <span id="M:xn.Recorder.SetDestination(xn.RecordMedium,System.String):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xn.Recorder.SetDestination(xn.RecordMedium,System.String):Parameters">
+            <dl>
+              <dt>
+                <i>medium</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+              <dt>
+                <i>dest</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xn.Recorder.SetDestination(xn.RecordMedium,System.String):Remarks')">
+              <span id="M:xn.Recorder.SetDestination(xn.RecordMedium,System.String):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xn.Recorder.SetDestination(xn.RecordMedium,System.String):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xn.Recorder.SetDestination(xn.RecordMedium,System.String):Version Information')">
+              <span id="M:xn.Recorder.SetDestination(xn.RecordMedium,System.String):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xn.Recorder.SetDestination(xn.RecordMedium,System.String):Version Information">
+            <b>Namespace: </b>xn<br /><b>Assembly: </b>OpenNI.net (in OpenNI.net.dll)<br /><b>Assembly Versions: </b>1.0.0.25</blockquote>
+          <hr size="1" />
+        </blockquote>
+      </blockquote>
+    </div>
+    <hr size="1" />
+    <div class="Copyright">
+    </div>
+  </body>
+</html>

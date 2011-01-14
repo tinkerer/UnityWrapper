@@ -1,0 +1,907 @@
+<html>
+  <head>
+    <title>xn.Query</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+      a { text-decoration: none }
+
+      div.SideBar {
+        padding-left: 1em;
+        padding-right: 1em;
+        right: 0;
+        float: right;
+        border: thin solid black;
+        background-color: #f2f2f2;
+      }
+    
+      .CollectionTitle { font-weight: bold }
+      .PageTitle { font-size: 150%; font-weight: bold }
+
+      .Summary { }
+      .Signature { }          
+      .Remarks { }
+      .Members { }
+      .Copyright { }
+      
+      .Section { font-size: 125%; font-weight: bold }
+      p.Summary {
+        margin-left: 1em;
+      }
+      .SectionBox { margin-left: 2em }
+      .NamespaceName { font-size: 105%; font-weight: bold }
+      .NamespaceSumary { }
+      .MemberName { font-size: 115%; font-weight: bold; margin-top: 1em }
+      .Subsection { font-size: 105%; font-weight: bold }
+      .SubsectionBox { margin-left: 2em; margin-bottom: 1em }
+
+      .CodeExampleTable { background-color: #f5f5dd; border: thin solid black; padding: .25em; }
+      
+      .TypesListing {
+        border-collapse: collapse;
+      }
+
+      td {
+        vertical-align: top;
+      }
+      th {
+        text-align: left;
+      }
+
+      .TypesListing td { 
+        margin: 0px;  
+        padding: .25em;
+        border: solid gray 1px;
+      }
+
+      .TypesListing th { 
+        margin: 0px;  
+        padding: .25em;
+        background-color: #f2f2f2;
+        border: solid gray 1px;
+      }
+
+      div.Footer {
+        border-top: 1px solid gray;
+        margin-top: 1.5em;
+        padding-top: 0.6em;
+        text-align: center;
+        color: gray;
+      }
+
+      span.NotEntered /* Documentation for this section has not yet been entered */ {
+        font-style: italic;
+        color: red;	
+      }
+
+      div.Header {
+        background: #B0C4DE;
+        border: double;
+        border-color: white;
+        border-width: 7px;
+        padding: 0.5em;
+      }
+
+      div.Header * {
+        font-size: smaller;
+      }
+
+      div.Note {
+      }
+
+      i.ParamRef {
+      }
+
+      i.subtitle {
+      }
+
+      ul.TypeMembersIndex {
+        text-align: left;
+        background: #F8F8F8;
+      }
+
+      ul.TypeMembersIndex li {
+        display: inline;
+        margin:  0.5em;
+      }
+
+      table.HeaderTable {
+      }
+
+      table.SignatureTable {
+      }
+
+      table.Documentation, table.Enumeration, table.TypeDocumentation {
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      table.Documentation tr th, table.TypeMembers tr th, table.Enumeration tr th, table.TypeDocumentation tr th {
+        background: whitesmoke;
+        padding: 0.8em;
+        border: 1px solid gray;
+        text-align: left;
+        vertical-align: bottom;
+      }
+
+      table.Documentation tr td, table.TypeMembers tr td, table.Enumeration tr td, table.TypeDocumentation tr td {
+        padding: 0.5em;
+        border: 1px solid gray;
+        text-align: left;
+        vertical-align: top;
+      }
+
+      table.TypeMembers {
+        border: 1px solid #C0C0C0;
+        width: 100%;
+      }
+
+      table.TypeMembers tr td {
+        background: #F8F8F8;
+        border: white;
+      }
+
+      table.Documentation {
+      }
+
+      table.TypeMembers {
+      }
+
+      div.CodeExample {
+        width: 100%;
+        border: 1px solid #DDDDDD;
+        background-color: #F8F8F8;
+      }
+
+      div.CodeExample p {
+        margin: 0.5em;
+        border-bottom: 1px solid #DDDDDD;
+      }
+
+      div.CodeExample div {
+        margin: 0.5em;
+      }
+
+      h4 {
+        margin-bottom: 0;
+      }
+
+      div.Signature {
+        border: 1px solid #C0C0C0;
+        background: #F2F2F2;
+        padding: 1em;
+      }
+    </style>
+    <script type="text/JavaScript">
+      function toggle_display (block) {
+        var w = document.getElementById (block);
+        var t = document.getElementById (block + ":toggle");
+        if (w.style.display == "none") {
+          w.style.display = "block";
+          t.innerHTML = "⊟";
+        } else {
+          w.style.display = "none";
+          t.innerHTML = "⊞";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="CollectionTitle">
+      <a href="../index.html">OpenNI.net</a> : <a href="index.html">xn Namespace</a></div>
+    <div class="SideBar">
+      <p>
+        <a href="#T:xn.Query">Overview</a>
+      </p>
+      <p>
+        <a href="#T:xn.Query:Signature">Signature</a>
+      </p>
+      <p>
+        <a href="#T:xn.Query:Docs">Remarks</a>
+      </p>
+      <p>
+        <a href="#Members">Members</a>
+      </p>
+      <p>
+        <a href="#T:xn.Query:Members">Member Details</a>
+      </p>
+    </div>
+    <h1 class="PageTitle" id="T:xn.Query">Query  Class</h1>
+    <p class="Summary" id="T:xn.Query:Summary">
+      <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+    </p>
+    <div id="T:xn.Query:Signature">
+      <div class="Signature">public class  <b>Query</b> : <a href="../xn/ObjectWrapper.html">ObjectWrapper</a></div>
+    </div>
+    <div class="Remarks" id="T:xn.Query:Docs">
+      <h4 class="Subsection">
+        <a href="javascript:toggle_display('T:xn.Query:Docs:Remarks')">
+          <span id="T:xn.Query:Docs:Remarks:toggle">⊟</span> Remarks</a>
+      </h4>
+      <blockquote class="SubsectionBox" id="T:xn.Query:Docs:Remarks">
+        <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+      </blockquote>
+      <h4 class="Subsection">
+        <a href="javascript:toggle_display('T:xn.Query:Docs:Version Information')">
+          <span id="T:xn.Query:Docs:Version Information:toggle">⊟</span> Requirements</a>
+      </h4>
+      <blockquote class="SubsectionBox" id="T:xn.Query:Docs:Version Information">
+        <b>Namespace: </b>xn<br /><b>Assembly: </b>OpenNI.net (in OpenNI.net.dll)<br /><b>Assembly Versions: </b>1.0.0.25</blockquote>
+      <h2 class="Section" id="Members">
+        <a href="javascript:toggle_display('_Members')">
+          <span id="_Members:toggle">⊟</span> Members</a>
+      </h2>
+      <blockquote class="SectionBox" id="_Members">
+        <p>
+								See Also: Inherited members from
+								<a href="../xn/ObjectWrapper.html">ObjectWrapper</a>.
+							</p>
+        <h3>
+          <a href="javascript:toggle_display('Public Methods')">
+            <span id="Public Methods:toggle">⊟</span> Public Methods</a>
+        </h3>
+        <blockquote id="Public Methods">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:xn.Query.AddNeededNode(System.String)">AddNeededNode</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:xn.Query.AddSupportedCapability(System.String)">AddSupportedCapability</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:xn.Query.AddSupportedMapOutputMode(xn.MapOutputMode)">AddSupportedMapOutputMode</a>
+                  </b>(<a href="../xn/MapOutputMode.html">MapOutputMode</a>)<blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:xn.Query.FilterList(xn.Context,xn.NodeInfoList)">FilterList</a>
+                  </b>(<a href="../xn/Context.html">Context</a>, <a href="../xn/NodeInfoList.html">NodeInfoList</a>)<blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:xn.Query.FromNative(System.IntPtr)">FromNative</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.IntPtr">IntPtr</a>)<nobr> : <a href="../xn/Query.html">Query</a></nobr><blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:xn.Query.SetCreationInfo(System.String)">SetCreationInfo</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:xn.Query.SetExistingNodeOnly(System.Boolean)">SetExistingNodeOnly</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>)<blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:xn.Query.SetMaxVersion(xn.Version)">SetMaxVersion</a>
+                  </b>(<a href="../xn/Version.html">Version</a>)<blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:xn.Query.SetMinVersion(xn.Version)">SetMinVersion</a>
+                  </b>(<a href="../xn/Version.html">Version</a>)<blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:xn.Query.SetName(System.String)">SetName</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:xn.Query.SetSupportedMinUserPositions(System.UInt32)">SetSupportedMinUserPositions</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.UInt32">uint</a>)<blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:xn.Query.SetVendor(System.String)">SetVendor</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+            </table>
+          </div>
+        </blockquote>
+        <h3>
+          <a href="javascript:toggle_display('Protected Methods')">
+            <span id="Protected Methods:toggle">⊟</span> Protected Methods</a>
+        </h3>
+        <blockquote id="Protected Methods">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>
+                  <div>override </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:xn.Query.FreeObject(System.IntPtr)">FreeObject</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.IntPtr">IntPtr</a>)<blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+            </table>
+          </div>
+        </blockquote>
+      </blockquote>
+    </div>
+    <div class="Members" id="T:xn.Query:Members">
+      <h2 class="Section" id="MemberDetails">
+        <a href="javascript:toggle_display('_MemberDetails')">
+          <span id="_MemberDetails:toggle">⊟</span> Member Details</a>
+      </h2>
+      <blockquote class="SectionBox" id="_MemberDetails">
+        <h3 id="M:xn.Query.AddNeededNode(System.String)">
+          <a href="javascript:toggle_display('M:xn.Query.AddNeededNode(System.String):member')">
+            <span id="M:xn.Query.AddNeededNode(System.String):member:toggle">⊟</span> AddNeededNode Method</a>
+        </h3>
+        <blockquote id="M:xn.Query.AddNeededNode(System.String):member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>AddNeededNode</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> nodeName)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xn.Query.AddNeededNode(System.String):Parameters')">
+              <span id="M:xn.Query.AddNeededNode(System.String):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xn.Query.AddNeededNode(System.String):Parameters">
+            <dl>
+              <dt>
+                <i>nodeName</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xn.Query.AddNeededNode(System.String):Remarks')">
+              <span id="M:xn.Query.AddNeededNode(System.String):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xn.Query.AddNeededNode(System.String):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xn.Query.AddNeededNode(System.String):Version Information')">
+              <span id="M:xn.Query.AddNeededNode(System.String):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xn.Query.AddNeededNode(System.String):Version Information">
+            <b>Namespace: </b>xn<br /><b>Assembly: </b>OpenNI.net (in OpenNI.net.dll)<br /><b>Assembly Versions: </b>1.0.0.25</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:xn.Query.AddSupportedCapability(System.String)">
+          <a href="javascript:toggle_display('M:xn.Query.AddSupportedCapability(System.String):member')">
+            <span id="M:xn.Query.AddSupportedCapability(System.String):member:toggle">⊟</span> AddSupportedCapability Method</a>
+        </h3>
+        <blockquote id="M:xn.Query.AddSupportedCapability(System.String):member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>AddSupportedCapability</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> capName)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xn.Query.AddSupportedCapability(System.String):Parameters')">
+              <span id="M:xn.Query.AddSupportedCapability(System.String):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xn.Query.AddSupportedCapability(System.String):Parameters">
+            <dl>
+              <dt>
+                <i>capName</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xn.Query.AddSupportedCapability(System.String):Remarks')">
+              <span id="M:xn.Query.AddSupportedCapability(System.String):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xn.Query.AddSupportedCapability(System.String):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xn.Query.AddSupportedCapability(System.String):Version Information')">
+              <span id="M:xn.Query.AddSupportedCapability(System.String):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xn.Query.AddSupportedCapability(System.String):Version Information">
+            <b>Namespace: </b>xn<br /><b>Assembly: </b>OpenNI.net (in OpenNI.net.dll)<br /><b>Assembly Versions: </b>1.0.0.25</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:xn.Query.AddSupportedMapOutputMode(xn.MapOutputMode)">
+          <a href="javascript:toggle_display('M:xn.Query.AddSupportedMapOutputMode(xn.MapOutputMode):member')">
+            <span id="M:xn.Query.AddSupportedMapOutputMode(xn.MapOutputMode):member:toggle">⊟</span> AddSupportedMapOutputMode Method</a>
+        </h3>
+        <blockquote id="M:xn.Query.AddSupportedMapOutputMode(xn.MapOutputMode):member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>AddSupportedMapOutputMode</b> (<a href="../xn/MapOutputMode.html">MapOutputMode</a> mode)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xn.Query.AddSupportedMapOutputMode(xn.MapOutputMode):Parameters')">
+              <span id="M:xn.Query.AddSupportedMapOutputMode(xn.MapOutputMode):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xn.Query.AddSupportedMapOutputMode(xn.MapOutputMode):Parameters">
+            <dl>
+              <dt>
+                <i>mode</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xn.Query.AddSupportedMapOutputMode(xn.MapOutputMode):Remarks')">
+              <span id="M:xn.Query.AddSupportedMapOutputMode(xn.MapOutputMode):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xn.Query.AddSupportedMapOutputMode(xn.MapOutputMode):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xn.Query.AddSupportedMapOutputMode(xn.MapOutputMode):Version Information')">
+              <span id="M:xn.Query.AddSupportedMapOutputMode(xn.MapOutputMode):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xn.Query.AddSupportedMapOutputMode(xn.MapOutputMode):Version Information">
+            <b>Namespace: </b>xn<br /><b>Assembly: </b>OpenNI.net (in OpenNI.net.dll)<br /><b>Assembly Versions: </b>1.0.0.25</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:xn.Query.FilterList(xn.Context,xn.NodeInfoList)">
+          <a href="javascript:toggle_display('M:xn.Query.FilterList(xn.Context,xn.NodeInfoList):member')">
+            <span id="M:xn.Query.FilterList(xn.Context,xn.NodeInfoList):member:toggle">⊟</span> FilterList Method</a>
+        </h3>
+        <blockquote id="M:xn.Query.FilterList(xn.Context,xn.NodeInfoList):member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>FilterList</b> (<a href="../xn/Context.html">Context</a> context, <a href="../xn/NodeInfoList.html">NodeInfoList</a> list)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xn.Query.FilterList(xn.Context,xn.NodeInfoList):Parameters')">
+              <span id="M:xn.Query.FilterList(xn.Context,xn.NodeInfoList):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xn.Query.FilterList(xn.Context,xn.NodeInfoList):Parameters">
+            <dl>
+              <dt>
+                <i>context</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+              <dt>
+                <i>list</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xn.Query.FilterList(xn.Context,xn.NodeInfoList):Remarks')">
+              <span id="M:xn.Query.FilterList(xn.Context,xn.NodeInfoList):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xn.Query.FilterList(xn.Context,xn.NodeInfoList):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xn.Query.FilterList(xn.Context,xn.NodeInfoList):Version Information')">
+              <span id="M:xn.Query.FilterList(xn.Context,xn.NodeInfoList):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xn.Query.FilterList(xn.Context,xn.NodeInfoList):Version Information">
+            <b>Namespace: </b>xn<br /><b>Assembly: </b>OpenNI.net (in OpenNI.net.dll)<br /><b>Assembly Versions: </b>1.0.0.25</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:xn.Query.FreeObject(System.IntPtr)">
+          <a href="javascript:toggle_display('M:xn.Query.FreeObject(System.IntPtr):member')">
+            <span id="M:xn.Query.FreeObject(System.IntPtr):member:toggle">⊟</span> FreeObject Method</a>
+        </h3>
+        <blockquote id="M:xn.Query.FreeObject(System.IntPtr):member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <div class="Signature">protected override <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>FreeObject</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.IntPtr">IntPtr</a> ptr)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xn.Query.FreeObject(System.IntPtr):Parameters')">
+              <span id="M:xn.Query.FreeObject(System.IntPtr):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xn.Query.FreeObject(System.IntPtr):Parameters">
+            <dl>
+              <dt>
+                <i>ptr</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xn.Query.FreeObject(System.IntPtr):Remarks')">
+              <span id="M:xn.Query.FreeObject(System.IntPtr):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xn.Query.FreeObject(System.IntPtr):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xn.Query.FreeObject(System.IntPtr):Version Information')">
+              <span id="M:xn.Query.FreeObject(System.IntPtr):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xn.Query.FreeObject(System.IntPtr):Version Information">
+            <b>Namespace: </b>xn<br /><b>Assembly: </b>OpenNI.net (in OpenNI.net.dll)<br /><b>Assembly Versions: </b>1.0.0.25</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:xn.Query.FromNative(System.IntPtr)">
+          <a href="javascript:toggle_display('M:xn.Query.FromNative(System.IntPtr):member')">
+            <span id="M:xn.Query.FromNative(System.IntPtr):member:toggle">⊟</span> FromNative Method</a>
+        </h3>
+        <blockquote id="M:xn.Query.FromNative(System.IntPtr):member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <div class="Signature">public static <a href="../xn/Query.html">Query</a> <b>FromNative</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.IntPtr">IntPtr</a> pQuery)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xn.Query.FromNative(System.IntPtr):Parameters')">
+              <span id="M:xn.Query.FromNative(System.IntPtr):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xn.Query.FromNative(System.IntPtr):Parameters">
+            <dl>
+              <dt>
+                <i>pQuery</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xn.Query.FromNative(System.IntPtr):Returns')">
+              <span id="M:xn.Query.FromNative(System.IntPtr):Returns:toggle">⊟</span> Returns</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xn.Query.FromNative(System.IntPtr):Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xn.Query.FromNative(System.IntPtr):Remarks')">
+              <span id="M:xn.Query.FromNative(System.IntPtr):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xn.Query.FromNative(System.IntPtr):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xn.Query.FromNative(System.IntPtr):Version Information')">
+              <span id="M:xn.Query.FromNative(System.IntPtr):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xn.Query.FromNative(System.IntPtr):Version Information">
+            <b>Namespace: </b>xn<br /><b>Assembly: </b>OpenNI.net (in OpenNI.net.dll)<br /><b>Assembly Versions: </b>1.0.0.25</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:xn.Query.SetCreationInfo(System.String)">
+          <a href="javascript:toggle_display('M:xn.Query.SetCreationInfo(System.String):member')">
+            <span id="M:xn.Query.SetCreationInfo(System.String):member:toggle">⊟</span> SetCreationInfo Method</a>
+        </h3>
+        <blockquote id="M:xn.Query.SetCreationInfo(System.String):member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>SetCreationInfo</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> creationInfo)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xn.Query.SetCreationInfo(System.String):Parameters')">
+              <span id="M:xn.Query.SetCreationInfo(System.String):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xn.Query.SetCreationInfo(System.String):Parameters">
+            <dl>
+              <dt>
+                <i>creationInfo</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xn.Query.SetCreationInfo(System.String):Remarks')">
+              <span id="M:xn.Query.SetCreationInfo(System.String):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xn.Query.SetCreationInfo(System.String):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xn.Query.SetCreationInfo(System.String):Version Information')">
+              <span id="M:xn.Query.SetCreationInfo(System.String):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xn.Query.SetCreationInfo(System.String):Version Information">
+            <b>Namespace: </b>xn<br /><b>Assembly: </b>OpenNI.net (in OpenNI.net.dll)<br /><b>Assembly Versions: </b>1.0.0.25</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:xn.Query.SetExistingNodeOnly(System.Boolean)">
+          <a href="javascript:toggle_display('M:xn.Query.SetExistingNodeOnly(System.Boolean):member')">
+            <span id="M:xn.Query.SetExistingNodeOnly(System.Boolean):member:toggle">⊟</span> SetExistingNodeOnly Method</a>
+        </h3>
+        <blockquote id="M:xn.Query.SetExistingNodeOnly(System.Boolean):member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>SetExistingNodeOnly</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> existing)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xn.Query.SetExistingNodeOnly(System.Boolean):Parameters')">
+              <span id="M:xn.Query.SetExistingNodeOnly(System.Boolean):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xn.Query.SetExistingNodeOnly(System.Boolean):Parameters">
+            <dl>
+              <dt>
+                <i>existing</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xn.Query.SetExistingNodeOnly(System.Boolean):Remarks')">
+              <span id="M:xn.Query.SetExistingNodeOnly(System.Boolean):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xn.Query.SetExistingNodeOnly(System.Boolean):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xn.Query.SetExistingNodeOnly(System.Boolean):Version Information')">
+              <span id="M:xn.Query.SetExistingNodeOnly(System.Boolean):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xn.Query.SetExistingNodeOnly(System.Boolean):Version Information">
+            <b>Namespace: </b>xn<br /><b>Assembly: </b>OpenNI.net (in OpenNI.net.dll)<br /><b>Assembly Versions: </b>1.0.0.25</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:xn.Query.SetMaxVersion(xn.Version)">
+          <a href="javascript:toggle_display('M:xn.Query.SetMaxVersion(xn.Version):member')">
+            <span id="M:xn.Query.SetMaxVersion(xn.Version):member:toggle">⊟</span> SetMaxVersion Method</a>
+        </h3>
+        <blockquote id="M:xn.Query.SetMaxVersion(xn.Version):member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>SetMaxVersion</b> (<a href="../xn/Version.html">Version</a> max)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xn.Query.SetMaxVersion(xn.Version):Parameters')">
+              <span id="M:xn.Query.SetMaxVersion(xn.Version):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xn.Query.SetMaxVersion(xn.Version):Parameters">
+            <dl>
+              <dt>
+                <i>max</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xn.Query.SetMaxVersion(xn.Version):Remarks')">
+              <span id="M:xn.Query.SetMaxVersion(xn.Version):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xn.Query.SetMaxVersion(xn.Version):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xn.Query.SetMaxVersion(xn.Version):Version Information')">
+              <span id="M:xn.Query.SetMaxVersion(xn.Version):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xn.Query.SetMaxVersion(xn.Version):Version Information">
+            <b>Namespace: </b>xn<br /><b>Assembly: </b>OpenNI.net (in OpenNI.net.dll)<br /><b>Assembly Versions: </b>1.0.0.25</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:xn.Query.SetMinVersion(xn.Version)">
+          <a href="javascript:toggle_display('M:xn.Query.SetMinVersion(xn.Version):member')">
+            <span id="M:xn.Query.SetMinVersion(xn.Version):member:toggle">⊟</span> SetMinVersion Method</a>
+        </h3>
+        <blockquote id="M:xn.Query.SetMinVersion(xn.Version):member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>SetMinVersion</b> (<a href="../xn/Version.html">Version</a> min)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xn.Query.SetMinVersion(xn.Version):Parameters')">
+              <span id="M:xn.Query.SetMinVersion(xn.Version):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xn.Query.SetMinVersion(xn.Version):Parameters">
+            <dl>
+              <dt>
+                <i>min</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xn.Query.SetMinVersion(xn.Version):Remarks')">
+              <span id="M:xn.Query.SetMinVersion(xn.Version):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xn.Query.SetMinVersion(xn.Version):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xn.Query.SetMinVersion(xn.Version):Version Information')">
+              <span id="M:xn.Query.SetMinVersion(xn.Version):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xn.Query.SetMinVersion(xn.Version):Version Information">
+            <b>Namespace: </b>xn<br /><b>Assembly: </b>OpenNI.net (in OpenNI.net.dll)<br /><b>Assembly Versions: </b>1.0.0.25</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:xn.Query.SetName(System.String)">
+          <a href="javascript:toggle_display('M:xn.Query.SetName(System.String):member')">
+            <span id="M:xn.Query.SetName(System.String):member:toggle">⊟</span> SetName Method</a>
+        </h3>
+        <blockquote id="M:xn.Query.SetName(System.String):member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>SetName</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> name)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xn.Query.SetName(System.String):Parameters')">
+              <span id="M:xn.Query.SetName(System.String):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xn.Query.SetName(System.String):Parameters">
+            <dl>
+              <dt>
+                <i>name</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xn.Query.SetName(System.String):Remarks')">
+              <span id="M:xn.Query.SetName(System.String):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xn.Query.SetName(System.String):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xn.Query.SetName(System.String):Version Information')">
+              <span id="M:xn.Query.SetName(System.String):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xn.Query.SetName(System.String):Version Information">
+            <b>Namespace: </b>xn<br /><b>Assembly: </b>OpenNI.net (in OpenNI.net.dll)<br /><b>Assembly Versions: </b>1.0.0.25</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:xn.Query.SetSupportedMinUserPositions(System.UInt32)">
+          <a href="javascript:toggle_display('M:xn.Query.SetSupportedMinUserPositions(System.UInt32):member')">
+            <span id="M:xn.Query.SetSupportedMinUserPositions(System.UInt32):member:toggle">⊟</span> SetSupportedMinUserPositions Method</a>
+        </h3>
+        <blockquote id="M:xn.Query.SetSupportedMinUserPositions(System.UInt32):member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>SetSupportedMinUserPositions</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.UInt32">uint</a> count)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xn.Query.SetSupportedMinUserPositions(System.UInt32):Parameters')">
+              <span id="M:xn.Query.SetSupportedMinUserPositions(System.UInt32):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xn.Query.SetSupportedMinUserPositions(System.UInt32):Parameters">
+            <dl>
+              <dt>
+                <i>count</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xn.Query.SetSupportedMinUserPositions(System.UInt32):Remarks')">
+              <span id="M:xn.Query.SetSupportedMinUserPositions(System.UInt32):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xn.Query.SetSupportedMinUserPositions(System.UInt32):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xn.Query.SetSupportedMinUserPositions(System.UInt32):Version Information')">
+              <span id="M:xn.Query.SetSupportedMinUserPositions(System.UInt32):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xn.Query.SetSupportedMinUserPositions(System.UInt32):Version Information">
+            <b>Namespace: </b>xn<br /><b>Assembly: </b>OpenNI.net (in OpenNI.net.dll)<br /><b>Assembly Versions: </b>1.0.0.25</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:xn.Query.SetVendor(System.String)">
+          <a href="javascript:toggle_display('M:xn.Query.SetVendor(System.String):member')">
+            <span id="M:xn.Query.SetVendor(System.String):member:toggle">⊟</span> SetVendor Method</a>
+        </h3>
+        <blockquote id="M:xn.Query.SetVendor(System.String):member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>SetVendor</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> vendorName)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xn.Query.SetVendor(System.String):Parameters')">
+              <span id="M:xn.Query.SetVendor(System.String):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xn.Query.SetVendor(System.String):Parameters">
+            <dl>
+              <dt>
+                <i>vendorName</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xn.Query.SetVendor(System.String):Remarks')">
+              <span id="M:xn.Query.SetVendor(System.String):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xn.Query.SetVendor(System.String):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xn.Query.SetVendor(System.String):Version Information')">
+              <span id="M:xn.Query.SetVendor(System.String):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xn.Query.SetVendor(System.String):Version Information">
+            <b>Namespace: </b>xn<br /><b>Assembly: </b>OpenNI.net (in OpenNI.net.dll)<br /><b>Assembly Versions: </b>1.0.0.25</blockquote>
+          <hr size="1" />
+        </blockquote>
+      </blockquote>
+    </div>
+    <hr size="1" />
+    <div class="Copyright">
+    </div>
+  </body>
+</html>
