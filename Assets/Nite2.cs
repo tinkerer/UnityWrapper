@@ -17,7 +17,7 @@ using System.Threading;using System.Text; using xn;using xnv;public class N
     short[] usersLabelMap;
     short[] usersDepthMap;
     float[] usersHistogramMap;
-		
+		DepthMetaData depthMD;
 		
 		
 		private int[] histogram;
@@ -81,7 +81,8 @@ using System.Threading;using System.Text; using xn;using xnv;public class N
 
 			
 			
-			
+			DepthMetaData depthMD = new DepthMetaData(); 
+		
 			
 			this.shouldRun = true;
 			//this.readerThread = new Thread(ReaderThread);
@@ -124,6 +125,17 @@ using System.Threading;using System.Text; using xn;using xnv;public class N
 	{
 		if (this.shouldRun)
 		{
+				try
+				{
+					this.context.WaitOneUpdateAll(this.depth);
+				}
+				catch (Exception)
+				{
+				}
+
+				//this.depth.GetMetaData(depthMD);
+
+
            uint[] users = this.userGenerator.GetUsers();
            //Debug.Log(users.Length);
 		   foreach (uint user in users)
@@ -181,14 +193,14 @@ using System.Threading;using System.Text; using xn;using xnv;public class N
 	
 
 		
-		
+	
 	 void UpdateUserMap()
     {
         // copy over the maps
         //Marshal.Copy(NiteWrapper.GetUsersLabelMap(), usersLabelMap, 0, usersMapSize);
         //Marshal.Copy(NiteWrapper.GetUsersDepthMap(), usersDepthMap, 0, usersMapSize);
-		DepthMetaData usersDepthMap = new DepthMetaData(); 
-		this.depth.GetMetaData(usersDepthMap);
+		
+//		this.depth.GetMetaData(depthMD);
 		
 		
 		
