@@ -1,5 +1,31 @@
 using UnityEngine;using System;using System.Collections;using System.Collections.Generic;using System.Runtime.InteropServices;using System.IO;
-using System.Threading;using System.Text; using xn;using xnv;public class Nite2 : MonoBehaviour{		private readonly string SAMPLE_XML_FILE = @".//OpenNI.xml";
+using System.Threading;using System.Text; using xn;using xnv;public class Nite2 : MonoBehaviour{
+	
+	
+	
+	
+	public Transform rightElbow;
+	
+	//VT
+	public Transform rightWrist;
+	
+    public Transform leftElbow;
+    public Transform rightArm;
+    public Transform leftArm;
+    public Transform rightKnee;
+    public Transform leftKnee;
+    public Transform rightHip;
+    public Transform leftHip;
+    public Transform spine;
+    public Transform root;
+
+    private Quaternion[] initialRotations;
+    private Quaternion initialRoot;
+
+	
+	
+	
+			private readonly string SAMPLE_XML_FILE = @".//OpenNI.xml";
 		private Context context;
 		private DepthGenerator depth;
         private UserGenerator userGenerator;
@@ -34,7 +60,57 @@ using System.Threading;using System.Text; using xn;using xnv;public class N
         private bool shouldDrawSkeleton = true;
         
         
+      public void RotateToInitialPosition()
+    {
+        //root.rotation = initialRoot;
+        spine.rotation = initialRotations[(int)SkeletonJoint.Torso];
+        rightArm.rotation = initialRotations[(int)SkeletonJoint.RightShoulder];
+        leftArm.rotation = initialRotations[(int)SkeletonJoint.LeftShoulder];
+        rightElbow.rotation = initialRotations[(int)SkeletonJoint.RightElbow];
+		
+		//VT
+		rightWrist.rotation = initialRotations[(int)SkeletonJoint.RightWrist];
         
+		leftElbow.rotation = initialRotations[(int)SkeletonJoint.LeftElbow];
+        rightHip.rotation = initialRotations[(int)SkeletonJoint.RightHip];
+        leftHip.rotation = initialRotations[(int)SkeletonJoint.LeftHip];
+        rightKnee.rotation = initialRotations[(int)SkeletonJoint.RightKnee];
+        leftKnee.rotation = initialRotations[(int)SkeletonJoint.LeftKnee];
+    }
+
+    
+    
+    public void RotateToCalibrationPose()
+    {
+        // Calibration pose is simply initial position with hands raised up
+        RotateToInitialPosition();
+        rightElbow.rotation = Quaternion.Euler(0, -90, 90) * initialRotations[(int)SkeletonJoint.RightElbow];
+        leftElbow.rotation = Quaternion.Euler(0, 90, -90) * initialRotations[(int)SkeletonJoint.LeftElbow];
+    }
+        
+    void InitializeCharacter()
+    {
+    
+    
+        initialRotations = new Quaternion[24]; //i count 24 joints in xn.SkeletonJoint spec
+        initialRotations[(int)SkeletonJoint.LeftElbow] = leftElbow.rotation;
+        initialRotations[(int)SkeletonJoint.RightElbow] = rightElbow.rotation;
+        initialRotations[(int)SkeletonJoint.LeftShoulder] = leftArm.rotation;
+        initialRotations[(int)SkeletonJoint.RightShoulder] = rightArm.rotation;
+        initialRotations[(int)SkeletonJoint.RightKnee] = rightKnee.rotation;
+        initialRotations[(int)SkeletonJoint.LeftKnee] = leftKnee.rotation;
+        initialRotations[(int)SkeletonJoint.RightHip] = rightHip.rotation;
+        initialRotations[(int)SkeletonJoint.LeftHip] = leftHip.rotation;
+        initialRotations[(int)SkeletonJoint.Torso] = spine.rotation;
+		
+		//VT
+		initialRotations[(int)SkeletonJoint.RightWrist] = rightWrist.rotation;
+		
+        //initialRoot = root.rotation;
+
+        RotateToCalibrationPose();
+    
+    }
         
         	void Start()	{
 
@@ -45,6 +121,7 @@ using System.Threading;using System.Text; using xn;using xnv;public class N
     
     */
     
+    InitializeCharacter();
 		this.context = new Context(SAMPLE_XML_FILE);
 			this.depth = context.FindExistingNode(NodeType.Depth) as DepthGenerator;
 			if (this.depth == null)
@@ -87,7 +164,7 @@ using System.Threading;using System.Text; using xn;using xnv;public class N
 
 			
 			
-			DepthMetaData depthMD = new DepthMetaData(); 
+			//DepthMetaData depthMD = new DepthMetaData(); 
 		
 			
 			this.shouldRun = true;
@@ -102,6 +179,7 @@ using System.Threading;using System.Text; using xn;using xnv;public class N
             	Debug.Log("callibration ended successfully");
                 this.skeletonCapbility.StartTracking(id);
                 this.joints.Add(id, new Dictionary<SkeletonJoint, SkeletonJointPosition>());
+                
             }
             else
             {
@@ -129,6 +207,7 @@ using System.Threading;using System.Text; using xn;using xnv;public class N
 
 		void Update()
 	{
+		bool doUpdate = true;
 		if (this.shouldRun)
 		{
 				try
@@ -148,12 +227,76 @@ using System.Threading;using System.Text; using xn;using xnv;public class N
                     {
                     	if (this.skeletonCapbility.IsTracking(user))
                     	{
+                    		doUpdate = false;
+                    		Debug.Log("here we go");
 							GetJoints(user);
+							this.UpdateAvatar(user);
+							
+							
                     	}
                     }
 		}
-		UpdateUserMap();
+		if (doUpdate)
+		{
+			UpdateUserMap();
+		}
 	}
+	
+	
+	void UpdateAvatar(uint userId)
+    {
+        //root.rotation = Quaternion.LookRotation(Vector3.forward);
+
+        TransformBone(userId, SkeletonJoint.Torso, spine, true);
+        TransformBone(userId, SkeletonJoint.RightShoulder, rightArm, false);
+        TransformBone(userId, SkeletonJoint.LeftShoulder, leftArm, false);
+        TransformBone(userId, SkeletonJoint.RightElbow, rightElbow, false);
+		
+        TransformBone(userId, SkeletonJoint.LeftElbow, leftElbow, false);
+        TransformBone(userId, SkeletonJoint.RightHip, rightHip, false);
+        TransformBone(userId, SkeletonJoint.LeftHip, leftHip, false);
+        TransformBone(userId, SkeletonJoint.RightKnee, rightKnee, false);
+        TransformBone(userId, SkeletonJoint.LeftKnee, leftKnee, false);
+    }
+	
+	
+	  void TransformBone(uint userId, SkeletonJoint joint, Transform dest, bool move)
+    {
+        SkeletonJointPosition sjp = this.joints[userId][joint];
+        Point3D pos = sjp.position;
+        SkeletonJointOrientation ori = new SkeletonJointOrientation();
+        this.skeletonCapbility.GetSkeletonJointOrientation(userId,joint, ori);
+        float [] m = ori.Orientation.elements;                       
+        // only modify joint if confidence is high enough in this frame
+        if (ori.Confidence > 0.5)
+        {
+            // Z coordinate in OpenNI is opposite from Unity. We will create a quat
+            // to rotate from OpenNI to Unity (relative to initial rotation)
+        //    Vector3 worldZVec = new Vector3(-ori.m02, -ori.m12, ori.m22);
+           Vector3 worldZVec = new Vector3(-m[2], -m[5], m[8]);
+
+         //   Vector3 worldYVec = new Vector3(trans.ori.m01, trans.ori.m11, -trans.ori.m21);
+           Vector3 worldYVec = new Vector3(m[1], m[4], -m[7]);
+
+            Quaternion jointRotation = Quaternion.LookRotation(worldZVec, worldYVec);
+
+            Quaternion newRotation = jointRotation * initialRotations[(int)joint];
+
+            // Some smoothing
+            dest.rotation = Quaternion.Slerp(dest.rotation, newRotation, Time.deltaTime * 20);
+        }
+		
+		if (move)
+		{
+//			dest.position = new Vector3(trans.pos.x/1000, trans.pos.y/1000 -1, -trans.pos.z/1000);
+			dest.position = new Vector3(pos.X/1000, pos.Y/1000 -1, -pos.Z/1000);
+
+		}
+    }
+	
+	
+	
+	
 		  private void GetJoint(uint user, SkeletonJoint joint)
         {
             SkeletonJointPosition pos = new SkeletonJointPosition();
@@ -194,7 +337,9 @@ using System.Threading;using System.Text; using xn;using xnv;public class N
             GetJoint(user, SkeletonJoint.RightFoot);
         }	void OnGUI()
 	{
-		 GUI.DrawTexture(usersMapRect, usersLblTex);
+		
+			 GUI.DrawTexture(usersMapRect, usersLblTex);
+		
 	}
 	
 
