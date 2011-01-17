@@ -1,0 +1,589 @@
+<html>
+  <head>
+    <title>xnv.SteadyDetector</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+      a { text-decoration: none }
+
+      div.SideBar {
+        padding-left: 1em;
+        padding-right: 1em;
+        right: 0;
+        float: right;
+        border: thin solid black;
+        background-color: #f2f2f2;
+      }
+    
+      .CollectionTitle { font-weight: bold }
+      .PageTitle { font-size: 150%; font-weight: bold }
+
+      .Summary { }
+      .Signature { }          
+      .Remarks { }
+      .Members { }
+      .Copyright { }
+      
+      .Section { font-size: 125%; font-weight: bold }
+      p.Summary {
+        margin-left: 1em;
+      }
+      .SectionBox { margin-left: 2em }
+      .NamespaceName { font-size: 105%; font-weight: bold }
+      .NamespaceSumary { }
+      .MemberName { font-size: 115%; font-weight: bold; margin-top: 1em }
+      .Subsection { font-size: 105%; font-weight: bold }
+      .SubsectionBox { margin-left: 2em; margin-bottom: 1em }
+
+      .CodeExampleTable { background-color: #f5f5dd; border: thin solid black; padding: .25em; }
+      
+      .TypesListing {
+        border-collapse: collapse;
+      }
+
+      td {
+        vertical-align: top;
+      }
+      th {
+        text-align: left;
+      }
+
+      .TypesListing td { 
+        margin: 0px;  
+        padding: .25em;
+        border: solid gray 1px;
+      }
+
+      .TypesListing th { 
+        margin: 0px;  
+        padding: .25em;
+        background-color: #f2f2f2;
+        border: solid gray 1px;
+      }
+
+      div.Footer {
+        border-top: 1px solid gray;
+        margin-top: 1.5em;
+        padding-top: 0.6em;
+        text-align: center;
+        color: gray;
+      }
+
+      span.NotEntered /* Documentation for this section has not yet been entered */ {
+        font-style: italic;
+        color: red;	
+      }
+
+      div.Header {
+        background: #B0C4DE;
+        border: double;
+        border-color: white;
+        border-width: 7px;
+        padding: 0.5em;
+      }
+
+      div.Header * {
+        font-size: smaller;
+      }
+
+      div.Note {
+      }
+
+      i.ParamRef {
+      }
+
+      i.subtitle {
+      }
+
+      ul.TypeMembersIndex {
+        text-align: left;
+        background: #F8F8F8;
+      }
+
+      ul.TypeMembersIndex li {
+        display: inline;
+        margin:  0.5em;
+      }
+
+      table.HeaderTable {
+      }
+
+      table.SignatureTable {
+      }
+
+      table.Documentation, table.Enumeration, table.TypeDocumentation {
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      table.Documentation tr th, table.TypeMembers tr th, table.Enumeration tr th, table.TypeDocumentation tr th {
+        background: whitesmoke;
+        padding: 0.8em;
+        border: 1px solid gray;
+        text-align: left;
+        vertical-align: bottom;
+      }
+
+      table.Documentation tr td, table.TypeMembers tr td, table.Enumeration tr td, table.TypeDocumentation tr td {
+        padding: 0.5em;
+        border: 1px solid gray;
+        text-align: left;
+        vertical-align: top;
+      }
+
+      table.TypeMembers {
+        border: 1px solid #C0C0C0;
+        width: 100%;
+      }
+
+      table.TypeMembers tr td {
+        background: #F8F8F8;
+        border: white;
+      }
+
+      table.Documentation {
+      }
+
+      table.TypeMembers {
+      }
+
+      div.CodeExample {
+        width: 100%;
+        border: 1px solid #DDDDDD;
+        background-color: #F8F8F8;
+      }
+
+      div.CodeExample p {
+        margin: 0.5em;
+        border-bottom: 1px solid #DDDDDD;
+      }
+
+      div.CodeExample div {
+        margin: 0.5em;
+      }
+
+      h4 {
+        margin-bottom: 0;
+      }
+
+      div.Signature {
+        border: 1px solid #C0C0C0;
+        background: #F2F2F2;
+        padding: 1em;
+      }
+    </style>
+    <script type="text/JavaScript">
+      function toggle_display (block) {
+        var w = document.getElementById (block);
+        var t = document.getElementById (block + ":toggle");
+        if (w.style.display == "none") {
+          w.style.display = "block";
+          t.innerHTML = "⊟";
+        } else {
+          w.style.display = "none";
+          t.innerHTML = "⊞";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="CollectionTitle">
+      <a href="../index.html">XnVNite.net</a> : <a href="index.html">xnv Namespace</a></div>
+    <div class="SideBar">
+      <p>
+        <a href="#T:xnv.SteadyDetector">Overview</a>
+      </p>
+      <p>
+        <a href="#T:xnv.SteadyDetector:Signature">Signature</a>
+      </p>
+      <p>
+        <a href="#T:xnv.SteadyDetector:Docs">Remarks</a>
+      </p>
+      <p>
+        <a href="#Members">Members</a>
+      </p>
+      <p>
+        <a href="#T:xnv.SteadyDetector:Members">Member Details</a>
+      </p>
+    </div>
+    <h1 class="PageTitle" id="T:xnv.SteadyDetector">SteadyDetector  Class</h1>
+    <p class="Summary" id="T:xnv.SteadyDetector:Summary">
+      <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+    </p>
+    <div id="T:xnv.SteadyDetector:Signature">
+      <div class="Signature">public class  <b>SteadyDetector</b> : <a href="../xnv/PointControl.html">PointControl</a></div>
+    </div>
+    <div class="Remarks" id="T:xnv.SteadyDetector:Docs">
+      <h4 class="Subsection">
+        <a href="javascript:toggle_display('T:xnv.SteadyDetector:Docs:Remarks')">
+          <span id="T:xnv.SteadyDetector:Docs:Remarks:toggle">⊟</span> Remarks</a>
+      </h4>
+      <blockquote class="SubsectionBox" id="T:xnv.SteadyDetector:Docs:Remarks">
+        <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+      </blockquote>
+      <h4 class="Subsection">
+        <a href="javascript:toggle_display('T:xnv.SteadyDetector:Docs:Version Information')">
+          <span id="T:xnv.SteadyDetector:Docs:Version Information:toggle">⊟</span> Requirements</a>
+      </h4>
+      <blockquote class="SubsectionBox" id="T:xnv.SteadyDetector:Docs:Version Information">
+        <b>Namespace: </b>xnv<br /><b>Assembly: </b>XnVNite.net (in XnVNite.net.dll)<br /><b>Assembly Versions: </b>1.3.0.18</blockquote>
+      <h2 class="Section" id="Members">
+        <a href="javascript:toggle_display('_Members')">
+          <span id="_Members:toggle">⊟</span> Members</a>
+      </h2>
+      <blockquote class="SectionBox" id="_Members">
+        <p>
+								See Also: Inherited members from
+								<a href="../xnv/PointControl.html">PointControl</a>.
+							</p>
+        <h3>
+          <a href="javascript:toggle_display('Public Constructors')">
+            <span id="Public Constructors:toggle">⊟</span> Public Constructors</a>
+        </h3>
+        <blockquote id="Public Constructors">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <div>
+                    <b>
+                      <a href="#C:xnv.SteadyDetector">SteadyDetector</a>
+                    </b>()</div>
+                </td>
+                <td>
+                  <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+                </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <div>
+                    <b>
+                      <a href="#C:xnv.SteadyDetector(System.UInt32,System.Single)">SteadyDetector</a>
+                    </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.UInt32">uint</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Single">float</a>)</div>
+                </td>
+                <td>
+                  <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </blockquote>
+        <h3>
+          <a href="javascript:toggle_display('Public Properties')">
+            <span id="Public Properties:toggle">⊟</span> Public Properties</a>
+        </h3>
+        <blockquote id="Public Properties">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="#P:xnv.SteadyDetector.DetectionDuration">DetectionDuration</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.UInt32">uint</a>
+                  </i>. <span class="NotEntered">Documentation for this section has not yet been entered.</span></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="#P:xnv.SteadyDetector.MaximumVelocity">MaximumVelocity</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Single">float</a>
+                  </i>. <span class="NotEntered">Documentation for this section has not yet been entered.</span></td>
+              </tr>
+            </table>
+          </div>
+        </blockquote>
+        <h3>
+          <a href="javascript:toggle_display('Public Methods')">
+            <span id="Public Methods:toggle">⊟</span> Public Methods</a>
+        </h3>
+        <blockquote id="Public Methods">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:xnv.SteadyDetector.Finalize">Finalize</a>
+                  </b>()<blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:xnv.SteadyDetector.Reset">Reset</a>
+                  </b>()<blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+            </table>
+          </div>
+        </blockquote>
+        <h3>
+          <a href="javascript:toggle_display('Public Events')">
+            <span id="Public Events:toggle">⊟</span> Public Events</a>
+        </h3>
+        <blockquote id="Public Events">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="#E:xnv.SteadyDetector.Steady">Steady</a>
+                  </b>
+                </td>
+                <td>
+                  <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </blockquote>
+      </blockquote>
+    </div>
+    <div class="Members" id="T:xnv.SteadyDetector:Members">
+      <h2 class="Section" id="MemberDetails">
+        <a href="javascript:toggle_display('_MemberDetails')">
+          <span id="_MemberDetails:toggle">⊟</span> Member Details</a>
+      </h2>
+      <blockquote class="SectionBox" id="_MemberDetails">
+        <h3 id="C:xnv.SteadyDetector">
+          <a href="javascript:toggle_display('C:xnv.SteadyDetector:member')">
+            <span id="C:xnv.SteadyDetector:member:toggle">⊟</span> SteadyDetector Constructor</a>
+        </h3>
+        <blockquote id="C:xnv.SteadyDetector:member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <div class="Signature">public  <b>SteadyDetector</b> ()</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('C:xnv.SteadyDetector:Remarks')">
+              <span id="C:xnv.SteadyDetector:Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="C:xnv.SteadyDetector:Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('C:xnv.SteadyDetector:Version Information')">
+              <span id="C:xnv.SteadyDetector:Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="C:xnv.SteadyDetector:Version Information">
+            <b>Namespace: </b>xnv<br /><b>Assembly: </b>XnVNite.net (in XnVNite.net.dll)<br /><b>Assembly Versions: </b>1.3.0.18</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="C:xnv.SteadyDetector(System.UInt32,System.Single)">
+          <a href="javascript:toggle_display('C:xnv.SteadyDetector(System.UInt32,System.Single):member')">
+            <span id="C:xnv.SteadyDetector(System.UInt32,System.Single):member:toggle">⊟</span> SteadyDetector Constructor</a>
+        </h3>
+        <blockquote id="C:xnv.SteadyDetector(System.UInt32,System.Single):member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <div class="Signature">public  <b>SteadyDetector</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.UInt32">uint</a> nDuration, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Single">float</a> maxVelocity)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('C:xnv.SteadyDetector(System.UInt32,System.Single):Parameters')">
+              <span id="C:xnv.SteadyDetector(System.UInt32,System.Single):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="C:xnv.SteadyDetector(System.UInt32,System.Single):Parameters">
+            <dl>
+              <dt>
+                <i>nDuration</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+              <dt>
+                <i>maxVelocity</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('C:xnv.SteadyDetector(System.UInt32,System.Single):Remarks')">
+              <span id="C:xnv.SteadyDetector(System.UInt32,System.Single):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="C:xnv.SteadyDetector(System.UInt32,System.Single):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('C:xnv.SteadyDetector(System.UInt32,System.Single):Version Information')">
+              <span id="C:xnv.SteadyDetector(System.UInt32,System.Single):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="C:xnv.SteadyDetector(System.UInt32,System.Single):Version Information">
+            <b>Namespace: </b>xnv<br /><b>Assembly: </b>XnVNite.net (in XnVNite.net.dll)<br /><b>Assembly Versions: </b>1.3.0.18</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:xnv.SteadyDetector.DetectionDuration">
+          <a href="javascript:toggle_display('P:xnv.SteadyDetector.DetectionDuration:member')">
+            <span id="P:xnv.SteadyDetector.DetectionDuration:member:toggle">⊟</span> DetectionDuration Property</a>
+        </h3>
+        <blockquote id="P:xnv.SteadyDetector.DetectionDuration:member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.UInt32">uint</a> <b>DetectionDuration</b>  { set; get; }</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('P:xnv.SteadyDetector.DetectionDuration:Value')">
+              <span id="P:xnv.SteadyDetector.DetectionDuration:Value:toggle">⊟</span> Value</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="P:xnv.SteadyDetector.DetectionDuration:Value">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('P:xnv.SteadyDetector.DetectionDuration:Remarks')">
+              <span id="P:xnv.SteadyDetector.DetectionDuration:Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="P:xnv.SteadyDetector.DetectionDuration:Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('P:xnv.SteadyDetector.DetectionDuration:Version Information')">
+              <span id="P:xnv.SteadyDetector.DetectionDuration:Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="P:xnv.SteadyDetector.DetectionDuration:Version Information">
+            <b>Namespace: </b>xnv<br /><b>Assembly: </b>XnVNite.net (in XnVNite.net.dll)<br /><b>Assembly Versions: </b>1.3.0.18</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:xnv.SteadyDetector.Finalize">
+          <a href="javascript:toggle_display('M:xnv.SteadyDetector.Finalize:member')">
+            <span id="M:xnv.SteadyDetector.Finalize:member:toggle">⊟</span> Finalize Method</a>
+        </h3>
+        <blockquote id="M:xnv.SteadyDetector.Finalize:member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <div class="Signature">
+            <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>Finalize</b> ()</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xnv.SteadyDetector.Finalize:Remarks')">
+              <span id="M:xnv.SteadyDetector.Finalize:Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xnv.SteadyDetector.Finalize:Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xnv.SteadyDetector.Finalize:Version Information')">
+              <span id="M:xnv.SteadyDetector.Finalize:Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xnv.SteadyDetector.Finalize:Version Information">
+            <b>Namespace: </b>xnv<br /><b>Assembly: </b>XnVNite.net (in XnVNite.net.dll)<br /><b>Assembly Versions: </b>1.3.0.18</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:xnv.SteadyDetector.MaximumVelocity">
+          <a href="javascript:toggle_display('P:xnv.SteadyDetector.MaximumVelocity:member')">
+            <span id="P:xnv.SteadyDetector.MaximumVelocity:member:toggle">⊟</span> MaximumVelocity Property</a>
+        </h3>
+        <blockquote id="P:xnv.SteadyDetector.MaximumVelocity:member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Single">float</a> <b>MaximumVelocity</b>  { set; get; }</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('P:xnv.SteadyDetector.MaximumVelocity:Value')">
+              <span id="P:xnv.SteadyDetector.MaximumVelocity:Value:toggle">⊟</span> Value</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="P:xnv.SteadyDetector.MaximumVelocity:Value">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('P:xnv.SteadyDetector.MaximumVelocity:Remarks')">
+              <span id="P:xnv.SteadyDetector.MaximumVelocity:Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="P:xnv.SteadyDetector.MaximumVelocity:Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('P:xnv.SteadyDetector.MaximumVelocity:Version Information')">
+              <span id="P:xnv.SteadyDetector.MaximumVelocity:Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="P:xnv.SteadyDetector.MaximumVelocity:Version Information">
+            <b>Namespace: </b>xnv<br /><b>Assembly: </b>XnVNite.net (in XnVNite.net.dll)<br /><b>Assembly Versions: </b>1.3.0.18</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:xnv.SteadyDetector.Reset">
+          <a href="javascript:toggle_display('M:xnv.SteadyDetector.Reset:member')">
+            <span id="M:xnv.SteadyDetector.Reset:member:toggle">⊟</span> Reset Method</a>
+        </h3>
+        <blockquote id="M:xnv.SteadyDetector.Reset:member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>Reset</b> ()</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xnv.SteadyDetector.Reset:Remarks')">
+              <span id="M:xnv.SteadyDetector.Reset:Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xnv.SteadyDetector.Reset:Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xnv.SteadyDetector.Reset:Version Information')">
+              <span id="M:xnv.SteadyDetector.Reset:Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xnv.SteadyDetector.Reset:Version Information">
+            <b>Namespace: </b>xnv<br /><b>Assembly: </b>XnVNite.net (in XnVNite.net.dll)<br /><b>Assembly Versions: </b>1.3.0.18</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="E:xnv.SteadyDetector.Steady">
+          <a href="javascript:toggle_display('E:xnv.SteadyDetector.Steady:member')">
+            <span id="E:xnv.SteadyDetector.Steady:member:toggle">⊟</span> Steady Event</a>
+        </h3>
+        <blockquote id="E:xnv.SteadyDetector.Steady:member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <div class="Signature">public event <a href="../xnv/SteadyDetector+SteadyHandler.html">SteadyDetector.SteadyHandler</a> <b>Steady</b> </div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('E:xnv.SteadyDetector.Steady:Remarks')">
+              <span id="E:xnv.SteadyDetector.Steady:Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="E:xnv.SteadyDetector.Steady:Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('E:xnv.SteadyDetector.Steady:Version Information')">
+              <span id="E:xnv.SteadyDetector.Steady:Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="E:xnv.SteadyDetector.Steady:Version Information">
+            <b>Namespace: </b>xnv<br /><b>Assembly: </b>XnVNite.net (in XnVNite.net.dll)<br /><b>Assembly Versions: </b>1.3.0.18</blockquote>
+          <hr size="1" />
+        </blockquote>
+      </blockquote>
+    </div>
+    <hr size="1" />
+    <div class="Copyright">
+    </div>
+  </body>
+</html>

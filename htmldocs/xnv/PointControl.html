@@ -1,0 +1,807 @@
+<html>
+  <head>
+    <title>xnv.PointControl</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+      a { text-decoration: none }
+
+      div.SideBar {
+        padding-left: 1em;
+        padding-right: 1em;
+        right: 0;
+        float: right;
+        border: thin solid black;
+        background-color: #f2f2f2;
+      }
+    
+      .CollectionTitle { font-weight: bold }
+      .PageTitle { font-size: 150%; font-weight: bold }
+
+      .Summary { }
+      .Signature { }          
+      .Remarks { }
+      .Members { }
+      .Copyright { }
+      
+      .Section { font-size: 125%; font-weight: bold }
+      p.Summary {
+        margin-left: 1em;
+      }
+      .SectionBox { margin-left: 2em }
+      .NamespaceName { font-size: 105%; font-weight: bold }
+      .NamespaceSumary { }
+      .MemberName { font-size: 115%; font-weight: bold; margin-top: 1em }
+      .Subsection { font-size: 105%; font-weight: bold }
+      .SubsectionBox { margin-left: 2em; margin-bottom: 1em }
+
+      .CodeExampleTable { background-color: #f5f5dd; border: thin solid black; padding: .25em; }
+      
+      .TypesListing {
+        border-collapse: collapse;
+      }
+
+      td {
+        vertical-align: top;
+      }
+      th {
+        text-align: left;
+      }
+
+      .TypesListing td { 
+        margin: 0px;  
+        padding: .25em;
+        border: solid gray 1px;
+      }
+
+      .TypesListing th { 
+        margin: 0px;  
+        padding: .25em;
+        background-color: #f2f2f2;
+        border: solid gray 1px;
+      }
+
+      div.Footer {
+        border-top: 1px solid gray;
+        margin-top: 1.5em;
+        padding-top: 0.6em;
+        text-align: center;
+        color: gray;
+      }
+
+      span.NotEntered /* Documentation for this section has not yet been entered */ {
+        font-style: italic;
+        color: red;	
+      }
+
+      div.Header {
+        background: #B0C4DE;
+        border: double;
+        border-color: white;
+        border-width: 7px;
+        padding: 0.5em;
+      }
+
+      div.Header * {
+        font-size: smaller;
+      }
+
+      div.Note {
+      }
+
+      i.ParamRef {
+      }
+
+      i.subtitle {
+      }
+
+      ul.TypeMembersIndex {
+        text-align: left;
+        background: #F8F8F8;
+      }
+
+      ul.TypeMembersIndex li {
+        display: inline;
+        margin:  0.5em;
+      }
+
+      table.HeaderTable {
+      }
+
+      table.SignatureTable {
+      }
+
+      table.Documentation, table.Enumeration, table.TypeDocumentation {
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      table.Documentation tr th, table.TypeMembers tr th, table.Enumeration tr th, table.TypeDocumentation tr th {
+        background: whitesmoke;
+        padding: 0.8em;
+        border: 1px solid gray;
+        text-align: left;
+        vertical-align: bottom;
+      }
+
+      table.Documentation tr td, table.TypeMembers tr td, table.Enumeration tr td, table.TypeDocumentation tr td {
+        padding: 0.5em;
+        border: 1px solid gray;
+        text-align: left;
+        vertical-align: top;
+      }
+
+      table.TypeMembers {
+        border: 1px solid #C0C0C0;
+        width: 100%;
+      }
+
+      table.TypeMembers tr td {
+        background: #F8F8F8;
+        border: white;
+      }
+
+      table.Documentation {
+      }
+
+      table.TypeMembers {
+      }
+
+      div.CodeExample {
+        width: 100%;
+        border: 1px solid #DDDDDD;
+        background-color: #F8F8F8;
+      }
+
+      div.CodeExample p {
+        margin: 0.5em;
+        border-bottom: 1px solid #DDDDDD;
+      }
+
+      div.CodeExample div {
+        margin: 0.5em;
+      }
+
+      h4 {
+        margin-bottom: 0;
+      }
+
+      div.Signature {
+        border: 1px solid #C0C0C0;
+        background: #F2F2F2;
+        padding: 1em;
+      }
+    </style>
+    <script type="text/JavaScript">
+      function toggle_display (block) {
+        var w = document.getElementById (block);
+        var t = document.getElementById (block + ":toggle");
+        if (w.style.display == "none") {
+          w.style.display = "block";
+          t.innerHTML = "⊟";
+        } else {
+          w.style.display = "none";
+          t.innerHTML = "⊞";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="CollectionTitle">
+      <a href="../index.html">XnVNite.net</a> : <a href="index.html">xnv Namespace</a></div>
+    <div class="SideBar">
+      <p>
+        <a href="#T:xnv.PointControl">Overview</a>
+      </p>
+      <p>
+        <a href="#T:xnv.PointControl:Signature">Signature</a>
+      </p>
+      <p>
+        <a href="#T:xnv.PointControl:Docs">Remarks</a>
+      </p>
+      <p>
+        <a href="#Members">Members</a>
+      </p>
+      <p>
+        <a href="#T:xnv.PointControl:Members">Member Details</a>
+      </p>
+    </div>
+    <h1 class="PageTitle" id="T:xnv.PointControl">PointControl  Class</h1>
+    <p class="Summary" id="T:xnv.PointControl:Summary">
+      <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+    </p>
+    <div id="T:xnv.PointControl:Signature">
+      <div class="Signature">public class  <b>PointControl</b> : <a href="../xnv/MessageListener.html">MessageListener</a></div>
+    </div>
+    <div class="Remarks" id="T:xnv.PointControl:Docs">
+      <h4 class="Subsection">
+        <a href="javascript:toggle_display('T:xnv.PointControl:Docs:Remarks')">
+          <span id="T:xnv.PointControl:Docs:Remarks:toggle">⊟</span> Remarks</a>
+      </h4>
+      <blockquote class="SubsectionBox" id="T:xnv.PointControl:Docs:Remarks">
+        <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+      </blockquote>
+      <h4 class="Subsection">
+        <a href="javascript:toggle_display('T:xnv.PointControl:Docs:Version Information')">
+          <span id="T:xnv.PointControl:Docs:Version Information:toggle">⊟</span> Requirements</a>
+      </h4>
+      <blockquote class="SubsectionBox" id="T:xnv.PointControl:Docs:Version Information">
+        <b>Namespace: </b>xnv<br /><b>Assembly: </b>XnVNite.net (in XnVNite.net.dll)<br /><b>Assembly Versions: </b>1.3.0.18</blockquote>
+      <h2 class="Section" id="Members">
+        <a href="javascript:toggle_display('_Members')">
+          <span id="_Members:toggle">⊟</span> Members</a>
+      </h2>
+      <blockquote class="SectionBox" id="_Members">
+        <p>
+								See Also: Inherited members from
+								<a href="../xnv/MessageListener.html">MessageListener</a>.
+							</p>
+        <h3>
+          <a href="javascript:toggle_display('Public Constructors')">
+            <span id="Public Constructors:toggle">⊟</span> Public Constructors</a>
+        </h3>
+        <blockquote id="Public Constructors">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <div>
+                    <b>
+                      <a href="#C:xnv.PointControl">PointControl</a>
+                    </b>()</div>
+                </td>
+                <td>
+                  <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+                </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <div>
+                    <b>
+                      <a href="#C:xnv.PointControl(System.String)">PointControl</a>
+                    </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)</div>
+                </td>
+                <td>
+                  <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+                </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <div>
+                    <b>
+                      <a href="#C:xnv.PointControl(System.UInt32)">PointControl</a>
+                    </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.UInt32">uint</a>)</div>
+                </td>
+                <td>
+                  <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </blockquote>
+        <h3>
+          <a href="javascript:toggle_display('Public Methods')">
+            <span id="Public Methods:toggle">⊟</span> Public Methods</a>
+        </h3>
+        <blockquote id="Public Methods">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:xnv.PointControl.Finalize">Finalize</a>
+                  </b>()<blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:xnv.PointControl.GetPrimaryID">GetPrimaryID</a>
+                  </b>()<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.UInt32">uint</a></nobr><blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+            </table>
+          </div>
+        </blockquote>
+        <h3>
+          <a href="javascript:toggle_display('Public Events')">
+            <span id="Public Events:toggle">⊟</span> Public Events</a>
+        </h3>
+        <blockquote id="Public Events">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="#E:xnv.PointControl.NoPoints">NoPoints</a>
+                  </b>
+                </td>
+                <td>
+                  <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+                </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="#E:xnv.PointControl.PointCreate">PointCreate</a>
+                  </b>
+                </td>
+                <td>
+                  <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+                </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="#E:xnv.PointControl.PointDestroy">PointDestroy</a>
+                  </b>
+                </td>
+                <td>
+                  <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+                </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="#E:xnv.PointControl.PointUpdate">PointUpdate</a>
+                  </b>
+                </td>
+                <td>
+                  <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+                </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="#E:xnv.PointControl.PrimaryPointCreate">PrimaryPointCreate</a>
+                  </b>
+                </td>
+                <td>
+                  <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+                </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="#E:xnv.PointControl.PrimaryPointDestroy">PrimaryPointDestroy</a>
+                  </b>
+                </td>
+                <td>
+                  <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+                </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="#E:xnv.PointControl.PrimaryPointReplace">PrimaryPointReplace</a>
+                  </b>
+                </td>
+                <td>
+                  <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+                </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="#E:xnv.PointControl.PrimaryPointUpdate">PrimaryPointUpdate</a>
+                  </b>
+                </td>
+                <td>
+                  <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </blockquote>
+      </blockquote>
+    </div>
+    <div class="Members" id="T:xnv.PointControl:Members">
+      <h2 class="Section" id="MemberDetails">
+        <a href="javascript:toggle_display('_MemberDetails')">
+          <span id="_MemberDetails:toggle">⊟</span> Member Details</a>
+      </h2>
+      <blockquote class="SectionBox" id="_MemberDetails">
+        <h3 id="C:xnv.PointControl">
+          <a href="javascript:toggle_display('C:xnv.PointControl:member')">
+            <span id="C:xnv.PointControl:member:toggle">⊟</span> PointControl Constructor</a>
+        </h3>
+        <blockquote id="C:xnv.PointControl:member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <div class="Signature">public  <b>PointControl</b> ()</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('C:xnv.PointControl:Remarks')">
+              <span id="C:xnv.PointControl:Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="C:xnv.PointControl:Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('C:xnv.PointControl:Version Information')">
+              <span id="C:xnv.PointControl:Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="C:xnv.PointControl:Version Information">
+            <b>Namespace: </b>xnv<br /><b>Assembly: </b>XnVNite.net (in XnVNite.net.dll)<br /><b>Assembly Versions: </b>1.3.0.18</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="C:xnv.PointControl(System.String)">
+          <a href="javascript:toggle_display('C:xnv.PointControl(System.String):member')">
+            <span id="C:xnv.PointControl(System.String):member:toggle">⊟</span> PointControl Constructor</a>
+        </h3>
+        <blockquote id="C:xnv.PointControl(System.String):member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <div class="Signature">public  <b>PointControl</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> name)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('C:xnv.PointControl(System.String):Parameters')">
+              <span id="C:xnv.PointControl(System.String):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="C:xnv.PointControl(System.String):Parameters">
+            <dl>
+              <dt>
+                <i>name</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('C:xnv.PointControl(System.String):Remarks')">
+              <span id="C:xnv.PointControl(System.String):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="C:xnv.PointControl(System.String):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('C:xnv.PointControl(System.String):Version Information')">
+              <span id="C:xnv.PointControl(System.String):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="C:xnv.PointControl(System.String):Version Information">
+            <b>Namespace: </b>xnv<br /><b>Assembly: </b>XnVNite.net (in XnVNite.net.dll)<br /><b>Assembly Versions: </b>1.3.0.18</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="C:xnv.PointControl(System.UInt32)">
+          <a href="javascript:toggle_display('C:xnv.PointControl(System.UInt32):member')">
+            <span id="C:xnv.PointControl(System.UInt32):member:toggle">⊟</span> PointControl Constructor</a>
+        </h3>
+        <blockquote id="C:xnv.PointControl(System.UInt32):member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <div class="Signature">public  <b>PointControl</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.UInt32">uint</a> id)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('C:xnv.PointControl(System.UInt32):Parameters')">
+              <span id="C:xnv.PointControl(System.UInt32):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="C:xnv.PointControl(System.UInt32):Parameters">
+            <dl>
+              <dt>
+                <i>id</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('C:xnv.PointControl(System.UInt32):Remarks')">
+              <span id="C:xnv.PointControl(System.UInt32):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="C:xnv.PointControl(System.UInt32):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('C:xnv.PointControl(System.UInt32):Version Information')">
+              <span id="C:xnv.PointControl(System.UInt32):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="C:xnv.PointControl(System.UInt32):Version Information">
+            <b>Namespace: </b>xnv<br /><b>Assembly: </b>XnVNite.net (in XnVNite.net.dll)<br /><b>Assembly Versions: </b>1.3.0.18</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:xnv.PointControl.Finalize">
+          <a href="javascript:toggle_display('M:xnv.PointControl.Finalize:member')">
+            <span id="M:xnv.PointControl.Finalize:member:toggle">⊟</span> Finalize Method</a>
+        </h3>
+        <blockquote id="M:xnv.PointControl.Finalize:member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <div class="Signature">
+            <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>Finalize</b> ()</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xnv.PointControl.Finalize:Remarks')">
+              <span id="M:xnv.PointControl.Finalize:Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xnv.PointControl.Finalize:Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xnv.PointControl.Finalize:Version Information')">
+              <span id="M:xnv.PointControl.Finalize:Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xnv.PointControl.Finalize:Version Information">
+            <b>Namespace: </b>xnv<br /><b>Assembly: </b>XnVNite.net (in XnVNite.net.dll)<br /><b>Assembly Versions: </b>1.3.0.18</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:xnv.PointControl.GetPrimaryID">
+          <a href="javascript:toggle_display('M:xnv.PointControl.GetPrimaryID:member')">
+            <span id="M:xnv.PointControl.GetPrimaryID:member:toggle">⊟</span> GetPrimaryID Method</a>
+        </h3>
+        <blockquote id="M:xnv.PointControl.GetPrimaryID:member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.UInt32">uint</a> <b>GetPrimaryID</b> ()</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xnv.PointControl.GetPrimaryID:Returns')">
+              <span id="M:xnv.PointControl.GetPrimaryID:Returns:toggle">⊟</span> Returns</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xnv.PointControl.GetPrimaryID:Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xnv.PointControl.GetPrimaryID:Remarks')">
+              <span id="M:xnv.PointControl.GetPrimaryID:Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xnv.PointControl.GetPrimaryID:Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xnv.PointControl.GetPrimaryID:Version Information')">
+              <span id="M:xnv.PointControl.GetPrimaryID:Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xnv.PointControl.GetPrimaryID:Version Information">
+            <b>Namespace: </b>xnv<br /><b>Assembly: </b>XnVNite.net (in XnVNite.net.dll)<br /><b>Assembly Versions: </b>1.3.0.18</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="E:xnv.PointControl.NoPoints">
+          <a href="javascript:toggle_display('E:xnv.PointControl.NoPoints:member')">
+            <span id="E:xnv.PointControl.NoPoints:member:toggle">⊟</span> NoPoints Event</a>
+        </h3>
+        <blockquote id="E:xnv.PointControl.NoPoints:member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <div class="Signature">public event <a href="../xnv/PointControl+NoPointsHandler.html">PointControl.NoPointsHandler</a> <b>NoPoints</b> </div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('E:xnv.PointControl.NoPoints:Remarks')">
+              <span id="E:xnv.PointControl.NoPoints:Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="E:xnv.PointControl.NoPoints:Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('E:xnv.PointControl.NoPoints:Version Information')">
+              <span id="E:xnv.PointControl.NoPoints:Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="E:xnv.PointControl.NoPoints:Version Information">
+            <b>Namespace: </b>xnv<br /><b>Assembly: </b>XnVNite.net (in XnVNite.net.dll)<br /><b>Assembly Versions: </b>1.3.0.18</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="E:xnv.PointControl.PointCreate">
+          <a href="javascript:toggle_display('E:xnv.PointControl.PointCreate:member')">
+            <span id="E:xnv.PointControl.PointCreate:member:toggle">⊟</span> PointCreate Event</a>
+        </h3>
+        <blockquote id="E:xnv.PointControl.PointCreate:member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <div class="Signature">public event <a href="../xnv/PointControl+PointCreateHandler.html">PointControl.PointCreateHandler</a> <b>PointCreate</b> </div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('E:xnv.PointControl.PointCreate:Remarks')">
+              <span id="E:xnv.PointControl.PointCreate:Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="E:xnv.PointControl.PointCreate:Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('E:xnv.PointControl.PointCreate:Version Information')">
+              <span id="E:xnv.PointControl.PointCreate:Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="E:xnv.PointControl.PointCreate:Version Information">
+            <b>Namespace: </b>xnv<br /><b>Assembly: </b>XnVNite.net (in XnVNite.net.dll)<br /><b>Assembly Versions: </b>1.3.0.18</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="E:xnv.PointControl.PointDestroy">
+          <a href="javascript:toggle_display('E:xnv.PointControl.PointDestroy:member')">
+            <span id="E:xnv.PointControl.PointDestroy:member:toggle">⊟</span> PointDestroy Event</a>
+        </h3>
+        <blockquote id="E:xnv.PointControl.PointDestroy:member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <div class="Signature">public event <a href="../xnv/PointControl+PointDestroyHandler.html">PointControl.PointDestroyHandler</a> <b>PointDestroy</b> </div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('E:xnv.PointControl.PointDestroy:Remarks')">
+              <span id="E:xnv.PointControl.PointDestroy:Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="E:xnv.PointControl.PointDestroy:Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('E:xnv.PointControl.PointDestroy:Version Information')">
+              <span id="E:xnv.PointControl.PointDestroy:Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="E:xnv.PointControl.PointDestroy:Version Information">
+            <b>Namespace: </b>xnv<br /><b>Assembly: </b>XnVNite.net (in XnVNite.net.dll)<br /><b>Assembly Versions: </b>1.3.0.18</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="E:xnv.PointControl.PointUpdate">
+          <a href="javascript:toggle_display('E:xnv.PointControl.PointUpdate:member')">
+            <span id="E:xnv.PointControl.PointUpdate:member:toggle">⊟</span> PointUpdate Event</a>
+        </h3>
+        <blockquote id="E:xnv.PointControl.PointUpdate:member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <div class="Signature">public event <a href="../xnv/PointControl+PointUpdateHandler.html">PointControl.PointUpdateHandler</a> <b>PointUpdate</b> </div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('E:xnv.PointControl.PointUpdate:Remarks')">
+              <span id="E:xnv.PointControl.PointUpdate:Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="E:xnv.PointControl.PointUpdate:Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('E:xnv.PointControl.PointUpdate:Version Information')">
+              <span id="E:xnv.PointControl.PointUpdate:Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="E:xnv.PointControl.PointUpdate:Version Information">
+            <b>Namespace: </b>xnv<br /><b>Assembly: </b>XnVNite.net (in XnVNite.net.dll)<br /><b>Assembly Versions: </b>1.3.0.18</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="E:xnv.PointControl.PrimaryPointCreate">
+          <a href="javascript:toggle_display('E:xnv.PointControl.PrimaryPointCreate:member')">
+            <span id="E:xnv.PointControl.PrimaryPointCreate:member:toggle">⊟</span> PrimaryPointCreate Event</a>
+        </h3>
+        <blockquote id="E:xnv.PointControl.PrimaryPointCreate:member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <div class="Signature">public event <a href="../xnv/PointControl+PrimaryPointCreateHandler.html">PointControl.PrimaryPointCreateHandler</a> <b>PrimaryPointCreate</b> </div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('E:xnv.PointControl.PrimaryPointCreate:Remarks')">
+              <span id="E:xnv.PointControl.PrimaryPointCreate:Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="E:xnv.PointControl.PrimaryPointCreate:Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('E:xnv.PointControl.PrimaryPointCreate:Version Information')">
+              <span id="E:xnv.PointControl.PrimaryPointCreate:Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="E:xnv.PointControl.PrimaryPointCreate:Version Information">
+            <b>Namespace: </b>xnv<br /><b>Assembly: </b>XnVNite.net (in XnVNite.net.dll)<br /><b>Assembly Versions: </b>1.3.0.18</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="E:xnv.PointControl.PrimaryPointDestroy">
+          <a href="javascript:toggle_display('E:xnv.PointControl.PrimaryPointDestroy:member')">
+            <span id="E:xnv.PointControl.PrimaryPointDestroy:member:toggle">⊟</span> PrimaryPointDestroy Event</a>
+        </h3>
+        <blockquote id="E:xnv.PointControl.PrimaryPointDestroy:member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <div class="Signature">public event <a href="../xnv/PointControl+PrimaryPointDestroyHandler.html">PointControl.PrimaryPointDestroyHandler</a> <b>PrimaryPointDestroy</b> </div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('E:xnv.PointControl.PrimaryPointDestroy:Remarks')">
+              <span id="E:xnv.PointControl.PrimaryPointDestroy:Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="E:xnv.PointControl.PrimaryPointDestroy:Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('E:xnv.PointControl.PrimaryPointDestroy:Version Information')">
+              <span id="E:xnv.PointControl.PrimaryPointDestroy:Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="E:xnv.PointControl.PrimaryPointDestroy:Version Information">
+            <b>Namespace: </b>xnv<br /><b>Assembly: </b>XnVNite.net (in XnVNite.net.dll)<br /><b>Assembly Versions: </b>1.3.0.18</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="E:xnv.PointControl.PrimaryPointReplace">
+          <a href="javascript:toggle_display('E:xnv.PointControl.PrimaryPointReplace:member')">
+            <span id="E:xnv.PointControl.PrimaryPointReplace:member:toggle">⊟</span> PrimaryPointReplace Event</a>
+        </h3>
+        <blockquote id="E:xnv.PointControl.PrimaryPointReplace:member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <div class="Signature">public event <a href="../xnv/PointControl+PrimaryPointReplaceHandler.html">PointControl.PrimaryPointReplaceHandler</a> <b>PrimaryPointReplace</b> </div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('E:xnv.PointControl.PrimaryPointReplace:Remarks')">
+              <span id="E:xnv.PointControl.PrimaryPointReplace:Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="E:xnv.PointControl.PrimaryPointReplace:Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('E:xnv.PointControl.PrimaryPointReplace:Version Information')">
+              <span id="E:xnv.PointControl.PrimaryPointReplace:Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="E:xnv.PointControl.PrimaryPointReplace:Version Information">
+            <b>Namespace: </b>xnv<br /><b>Assembly: </b>XnVNite.net (in XnVNite.net.dll)<br /><b>Assembly Versions: </b>1.3.0.18</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="E:xnv.PointControl.PrimaryPointUpdate">
+          <a href="javascript:toggle_display('E:xnv.PointControl.PrimaryPointUpdate:member')">
+            <span id="E:xnv.PointControl.PrimaryPointUpdate:member:toggle">⊟</span> PrimaryPointUpdate Event</a>
+        </h3>
+        <blockquote id="E:xnv.PointControl.PrimaryPointUpdate:member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <div class="Signature">public event <a href="../xnv/PointControl+PrimaryPointUpdateHandler.html">PointControl.PrimaryPointUpdateHandler</a> <b>PrimaryPointUpdate</b> </div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('E:xnv.PointControl.PrimaryPointUpdate:Remarks')">
+              <span id="E:xnv.PointControl.PrimaryPointUpdate:Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="E:xnv.PointControl.PrimaryPointUpdate:Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('E:xnv.PointControl.PrimaryPointUpdate:Version Information')">
+              <span id="E:xnv.PointControl.PrimaryPointUpdate:Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="E:xnv.PointControl.PrimaryPointUpdate:Version Information">
+            <b>Namespace: </b>xnv<br /><b>Assembly: </b>XnVNite.net (in XnVNite.net.dll)<br /><b>Assembly Versions: </b>1.3.0.18</blockquote>
+          <hr size="1" />
+        </blockquote>
+      </blockquote>
+    </div>
+    <hr size="1" />
+    <div class="Copyright">
+    </div>
+  </body>
+</html>

@@ -1,0 +1,664 @@
+<html>
+  <head>
+    <title>xn.Log</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+      a { text-decoration: none }
+
+      div.SideBar {
+        padding-left: 1em;
+        padding-right: 1em;
+        right: 0;
+        float: right;
+        border: thin solid black;
+        background-color: #f2f2f2;
+      }
+    
+      .CollectionTitle { font-weight: bold }
+      .PageTitle { font-size: 150%; font-weight: bold }
+
+      .Summary { }
+      .Signature { }          
+      .Remarks { }
+      .Members { }
+      .Copyright { }
+      
+      .Section { font-size: 125%; font-weight: bold }
+      p.Summary {
+        margin-left: 1em;
+      }
+      .SectionBox { margin-left: 2em }
+      .NamespaceName { font-size: 105%; font-weight: bold }
+      .NamespaceSumary { }
+      .MemberName { font-size: 115%; font-weight: bold; margin-top: 1em }
+      .Subsection { font-size: 105%; font-weight: bold }
+      .SubsectionBox { margin-left: 2em; margin-bottom: 1em }
+
+      .CodeExampleTable { background-color: #f5f5dd; border: thin solid black; padding: .25em; }
+      
+      .TypesListing {
+        border-collapse: collapse;
+      }
+
+      td {
+        vertical-align: top;
+      }
+      th {
+        text-align: left;
+      }
+
+      .TypesListing td { 
+        margin: 0px;  
+        padding: .25em;
+        border: solid gray 1px;
+      }
+
+      .TypesListing th { 
+        margin: 0px;  
+        padding: .25em;
+        background-color: #f2f2f2;
+        border: solid gray 1px;
+      }
+
+      div.Footer {
+        border-top: 1px solid gray;
+        margin-top: 1.5em;
+        padding-top: 0.6em;
+        text-align: center;
+        color: gray;
+      }
+
+      span.NotEntered /* Documentation for this section has not yet been entered */ {
+        font-style: italic;
+        color: red;	
+      }
+
+      div.Header {
+        background: #B0C4DE;
+        border: double;
+        border-color: white;
+        border-width: 7px;
+        padding: 0.5em;
+      }
+
+      div.Header * {
+        font-size: smaller;
+      }
+
+      div.Note {
+      }
+
+      i.ParamRef {
+      }
+
+      i.subtitle {
+      }
+
+      ul.TypeMembersIndex {
+        text-align: left;
+        background: #F8F8F8;
+      }
+
+      ul.TypeMembersIndex li {
+        display: inline;
+        margin:  0.5em;
+      }
+
+      table.HeaderTable {
+      }
+
+      table.SignatureTable {
+      }
+
+      table.Documentation, table.Enumeration, table.TypeDocumentation {
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      table.Documentation tr th, table.TypeMembers tr th, table.Enumeration tr th, table.TypeDocumentation tr th {
+        background: whitesmoke;
+        padding: 0.8em;
+        border: 1px solid gray;
+        text-align: left;
+        vertical-align: bottom;
+      }
+
+      table.Documentation tr td, table.TypeMembers tr td, table.Enumeration tr td, table.TypeDocumentation tr td {
+        padding: 0.5em;
+        border: 1px solid gray;
+        text-align: left;
+        vertical-align: top;
+      }
+
+      table.TypeMembers {
+        border: 1px solid #C0C0C0;
+        width: 100%;
+      }
+
+      table.TypeMembers tr td {
+        background: #F8F8F8;
+        border: white;
+      }
+
+      table.Documentation {
+      }
+
+      table.TypeMembers {
+      }
+
+      div.CodeExample {
+        width: 100%;
+        border: 1px solid #DDDDDD;
+        background-color: #F8F8F8;
+      }
+
+      div.CodeExample p {
+        margin: 0.5em;
+        border-bottom: 1px solid #DDDDDD;
+      }
+
+      div.CodeExample div {
+        margin: 0.5em;
+      }
+
+      h4 {
+        margin-bottom: 0;
+      }
+
+      div.Signature {
+        border: 1px solid #C0C0C0;
+        background: #F2F2F2;
+        padding: 1em;
+      }
+    </style>
+    <script type="text/JavaScript">
+      function toggle_display (block) {
+        var w = document.getElementById (block);
+        var t = document.getElementById (block + ":toggle");
+        if (w.style.display == "none") {
+          w.style.display = "block";
+          t.innerHTML = "⊟";
+        } else {
+          w.style.display = "none";
+          t.innerHTML = "⊞";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="CollectionTitle">
+      <a href="../index.html">OpenNI.net</a> : <a href="index.html">xn Namespace</a></div>
+    <div class="SideBar">
+      <p>
+        <a href="#T:xn.Log">Overview</a>
+      </p>
+      <p>
+        <a href="#T:xn.Log:Signature">Signature</a>
+      </p>
+      <p>
+        <a href="#T:xn.Log:Docs">Remarks</a>
+      </p>
+      <p>
+        <a href="#Members">Members</a>
+      </p>
+      <p>
+        <a href="#T:xn.Log:Members">Member Details</a>
+      </p>
+    </div>
+    <h1 class="PageTitle" id="T:xn.Log">Log  Class</h1>
+    <p class="Summary" id="T:xn.Log:Summary">
+      <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+    </p>
+    <div id="T:xn.Log:Signature">
+      <div class="Signature">public static class  <b>Log</b></div>
+    </div>
+    <div class="Remarks" id="T:xn.Log:Docs">
+      <h4 class="Subsection">
+        <a href="javascript:toggle_display('T:xn.Log:Docs:Remarks')">
+          <span id="T:xn.Log:Docs:Remarks:toggle">⊟</span> Remarks</a>
+      </h4>
+      <blockquote class="SubsectionBox" id="T:xn.Log:Docs:Remarks">
+        <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+      </blockquote>
+      <h4 class="Subsection">
+        <a href="javascript:toggle_display('T:xn.Log:Docs:Version Information')">
+          <span id="T:xn.Log:Docs:Version Information:toggle">⊟</span> Requirements</a>
+      </h4>
+      <blockquote class="SubsectionBox" id="T:xn.Log:Docs:Version Information">
+        <b>Namespace: </b>xn<br /><b>Assembly: </b>OpenNI.net (in OpenNI.net.dll)<br /><b>Assembly Versions: </b>1.0.0.25</blockquote>
+      <h2 class="Section" id="Members">
+        <a href="javascript:toggle_display('_Members')">
+          <span id="_Members:toggle">⊟</span> Members</a>
+      </h2>
+      <blockquote class="SectionBox" id="_Members">
+        <p>
+								See Also: Inherited members from
+								<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a>.
+							</p>
+        <h3>
+          <a href="javascript:toggle_display('Public Fields')">
+            <span id="Public Fields:toggle">⊟</span> Public Fields</a>
+        </h3>
+        <blockquote id="Public Fields">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>
+                  <div>static readonly </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="#F:xn.Log.MASK_ALL">MASK_ALL</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>
+                  </i>. <span class="NotEntered">Documentation for this section has not yet been entered.</span></td>
+              </tr>
+            </table>
+          </div>
+        </blockquote>
+        <h3>
+          <a href="javascript:toggle_display('Public Methods')">
+            <span id="Public Methods:toggle">⊟</span> Public Methods</a>
+        </h3>
+        <blockquote id="Public Methods">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:xn.Log.Close">Close</a>
+                  </b>()<blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:xn.Log.Init">Init</a>
+                  </b>()<blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:xn.Log.InitFromXmlFile(System.String)">InitFromXmlFile</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:xn.Log.SetConsoleOutput(System.Boolean)">SetConsoleOutput</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>)<blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:xn.Log.SetFileOutput(System.Boolean)">SetFileOutput</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>)<blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:xn.Log.SetMaskState(System.String,System.Boolean)">SetMaskState</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>)<blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:xn.Log.SetOutputFolder(System.String)">SetOutputFolder</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:xn.Log.SetSeverityFilter(xn.LogSeverity)">SetSeverityFilter</a>
+                  </b>(<a href="../xn/LogSeverity.html">LogSeverity</a>)<blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+            </table>
+          </div>
+        </blockquote>
+      </blockquote>
+    </div>
+    <div class="Members" id="T:xn.Log:Members">
+      <h2 class="Section" id="MemberDetails">
+        <a href="javascript:toggle_display('_MemberDetails')">
+          <span id="_MemberDetails:toggle">⊟</span> Member Details</a>
+      </h2>
+      <blockquote class="SectionBox" id="_MemberDetails">
+        <h3 id="M:xn.Log.Close">
+          <a href="javascript:toggle_display('M:xn.Log.Close:member')">
+            <span id="M:xn.Log.Close:member:toggle">⊟</span> Close Method</a>
+        </h3>
+        <blockquote id="M:xn.Log.Close:member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <div class="Signature">public static <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>Close</b> ()</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xn.Log.Close:Remarks')">
+              <span id="M:xn.Log.Close:Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xn.Log.Close:Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xn.Log.Close:Version Information')">
+              <span id="M:xn.Log.Close:Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xn.Log.Close:Version Information">
+            <b>Namespace: </b>xn<br /><b>Assembly: </b>OpenNI.net (in OpenNI.net.dll)<br /><b>Assembly Versions: </b>1.0.0.25</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:xn.Log.Init">
+          <a href="javascript:toggle_display('M:xn.Log.Init:member')">
+            <span id="M:xn.Log.Init:member:toggle">⊟</span> Init Method</a>
+        </h3>
+        <blockquote id="M:xn.Log.Init:member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <div class="Signature">public static <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>Init</b> ()</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xn.Log.Init:Remarks')">
+              <span id="M:xn.Log.Init:Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xn.Log.Init:Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xn.Log.Init:Version Information')">
+              <span id="M:xn.Log.Init:Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xn.Log.Init:Version Information">
+            <b>Namespace: </b>xn<br /><b>Assembly: </b>OpenNI.net (in OpenNI.net.dll)<br /><b>Assembly Versions: </b>1.0.0.25</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:xn.Log.InitFromXmlFile(System.String)">
+          <a href="javascript:toggle_display('M:xn.Log.InitFromXmlFile(System.String):member')">
+            <span id="M:xn.Log.InitFromXmlFile(System.String):member:toggle">⊟</span> InitFromXmlFile Method</a>
+        </h3>
+        <blockquote id="M:xn.Log.InitFromXmlFile(System.String):member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <div class="Signature">public static <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>InitFromXmlFile</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> xmlFile)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xn.Log.InitFromXmlFile(System.String):Parameters')">
+              <span id="M:xn.Log.InitFromXmlFile(System.String):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xn.Log.InitFromXmlFile(System.String):Parameters">
+            <dl>
+              <dt>
+                <i>xmlFile</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xn.Log.InitFromXmlFile(System.String):Remarks')">
+              <span id="M:xn.Log.InitFromXmlFile(System.String):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xn.Log.InitFromXmlFile(System.String):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xn.Log.InitFromXmlFile(System.String):Version Information')">
+              <span id="M:xn.Log.InitFromXmlFile(System.String):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xn.Log.InitFromXmlFile(System.String):Version Information">
+            <b>Namespace: </b>xn<br /><b>Assembly: </b>OpenNI.net (in OpenNI.net.dll)<br /><b>Assembly Versions: </b>1.0.0.25</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="F:xn.Log.MASK_ALL">
+          <a href="javascript:toggle_display('F:xn.Log.MASK_ALL:member')">
+            <span id="F:xn.Log.MASK_ALL:member:toggle">⊟</span> MASK_ALL Field</a>
+        </h3>
+        <blockquote id="F:xn.Log.MASK_ALL:member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <div class="Signature">public static readonly <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> <b>MASK_ALL</b> </div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('F:xn.Log.MASK_ALL:Remarks')">
+              <span id="F:xn.Log.MASK_ALL:Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="F:xn.Log.MASK_ALL:Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('F:xn.Log.MASK_ALL:Version Information')">
+              <span id="F:xn.Log.MASK_ALL:Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="F:xn.Log.MASK_ALL:Version Information">
+            <b>Namespace: </b>xn<br /><b>Assembly: </b>OpenNI.net (in OpenNI.net.dll)<br /><b>Assembly Versions: </b>1.0.0.25</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:xn.Log.SetConsoleOutput(System.Boolean)">
+          <a href="javascript:toggle_display('M:xn.Log.SetConsoleOutput(System.Boolean):member')">
+            <span id="M:xn.Log.SetConsoleOutput(System.Boolean):member:toggle">⊟</span> SetConsoleOutput Method</a>
+        </h3>
+        <blockquote id="M:xn.Log.SetConsoleOutput(System.Boolean):member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <div class="Signature">public static <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>SetConsoleOutput</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> on)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xn.Log.SetConsoleOutput(System.Boolean):Parameters')">
+              <span id="M:xn.Log.SetConsoleOutput(System.Boolean):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xn.Log.SetConsoleOutput(System.Boolean):Parameters">
+            <dl>
+              <dt>
+                <i>on</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xn.Log.SetConsoleOutput(System.Boolean):Remarks')">
+              <span id="M:xn.Log.SetConsoleOutput(System.Boolean):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xn.Log.SetConsoleOutput(System.Boolean):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xn.Log.SetConsoleOutput(System.Boolean):Version Information')">
+              <span id="M:xn.Log.SetConsoleOutput(System.Boolean):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xn.Log.SetConsoleOutput(System.Boolean):Version Information">
+            <b>Namespace: </b>xn<br /><b>Assembly: </b>OpenNI.net (in OpenNI.net.dll)<br /><b>Assembly Versions: </b>1.0.0.25</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:xn.Log.SetFileOutput(System.Boolean)">
+          <a href="javascript:toggle_display('M:xn.Log.SetFileOutput(System.Boolean):member')">
+            <span id="M:xn.Log.SetFileOutput(System.Boolean):member:toggle">⊟</span> SetFileOutput Method</a>
+        </h3>
+        <blockquote id="M:xn.Log.SetFileOutput(System.Boolean):member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <div class="Signature">public static <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>SetFileOutput</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> on)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xn.Log.SetFileOutput(System.Boolean):Parameters')">
+              <span id="M:xn.Log.SetFileOutput(System.Boolean):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xn.Log.SetFileOutput(System.Boolean):Parameters">
+            <dl>
+              <dt>
+                <i>on</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xn.Log.SetFileOutput(System.Boolean):Remarks')">
+              <span id="M:xn.Log.SetFileOutput(System.Boolean):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xn.Log.SetFileOutput(System.Boolean):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xn.Log.SetFileOutput(System.Boolean):Version Information')">
+              <span id="M:xn.Log.SetFileOutput(System.Boolean):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xn.Log.SetFileOutput(System.Boolean):Version Information">
+            <b>Namespace: </b>xn<br /><b>Assembly: </b>OpenNI.net (in OpenNI.net.dll)<br /><b>Assembly Versions: </b>1.0.0.25</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:xn.Log.SetMaskState(System.String,System.Boolean)">
+          <a href="javascript:toggle_display('M:xn.Log.SetMaskState(System.String,System.Boolean):member')">
+            <span id="M:xn.Log.SetMaskState(System.String,System.Boolean):member:toggle">⊟</span> SetMaskState Method</a>
+        </h3>
+        <blockquote id="M:xn.Log.SetMaskState(System.String,System.Boolean):member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <div class="Signature">public static <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>SetMaskState</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> maskName, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> on)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xn.Log.SetMaskState(System.String,System.Boolean):Parameters')">
+              <span id="M:xn.Log.SetMaskState(System.String,System.Boolean):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xn.Log.SetMaskState(System.String,System.Boolean):Parameters">
+            <dl>
+              <dt>
+                <i>maskName</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+              <dt>
+                <i>on</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xn.Log.SetMaskState(System.String,System.Boolean):Remarks')">
+              <span id="M:xn.Log.SetMaskState(System.String,System.Boolean):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xn.Log.SetMaskState(System.String,System.Boolean):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xn.Log.SetMaskState(System.String,System.Boolean):Version Information')">
+              <span id="M:xn.Log.SetMaskState(System.String,System.Boolean):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xn.Log.SetMaskState(System.String,System.Boolean):Version Information">
+            <b>Namespace: </b>xn<br /><b>Assembly: </b>OpenNI.net (in OpenNI.net.dll)<br /><b>Assembly Versions: </b>1.0.0.25</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:xn.Log.SetOutputFolder(System.String)">
+          <a href="javascript:toggle_display('M:xn.Log.SetOutputFolder(System.String):member')">
+            <span id="M:xn.Log.SetOutputFolder(System.String):member:toggle">⊟</span> SetOutputFolder Method</a>
+        </h3>
+        <blockquote id="M:xn.Log.SetOutputFolder(System.String):member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <div class="Signature">public static <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>SetOutputFolder</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> folder)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xn.Log.SetOutputFolder(System.String):Parameters')">
+              <span id="M:xn.Log.SetOutputFolder(System.String):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xn.Log.SetOutputFolder(System.String):Parameters">
+            <dl>
+              <dt>
+                <i>folder</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xn.Log.SetOutputFolder(System.String):Remarks')">
+              <span id="M:xn.Log.SetOutputFolder(System.String):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xn.Log.SetOutputFolder(System.String):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xn.Log.SetOutputFolder(System.String):Version Information')">
+              <span id="M:xn.Log.SetOutputFolder(System.String):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xn.Log.SetOutputFolder(System.String):Version Information">
+            <b>Namespace: </b>xn<br /><b>Assembly: </b>OpenNI.net (in OpenNI.net.dll)<br /><b>Assembly Versions: </b>1.0.0.25</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:xn.Log.SetSeverityFilter(xn.LogSeverity)">
+          <a href="javascript:toggle_display('M:xn.Log.SetSeverityFilter(xn.LogSeverity):member')">
+            <span id="M:xn.Log.SetSeverityFilter(xn.LogSeverity):member:toggle">⊟</span> SetSeverityFilter Method</a>
+        </h3>
+        <blockquote id="M:xn.Log.SetSeverityFilter(xn.LogSeverity):member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <div class="Signature">public static <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>SetSeverityFilter</b> (<a href="../xn/LogSeverity.html">LogSeverity</a> severity)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xn.Log.SetSeverityFilter(xn.LogSeverity):Parameters')">
+              <span id="M:xn.Log.SetSeverityFilter(xn.LogSeverity):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xn.Log.SetSeverityFilter(xn.LogSeverity):Parameters">
+            <dl>
+              <dt>
+                <i>severity</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xn.Log.SetSeverityFilter(xn.LogSeverity):Remarks')">
+              <span id="M:xn.Log.SetSeverityFilter(xn.LogSeverity):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xn.Log.SetSeverityFilter(xn.LogSeverity):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xn.Log.SetSeverityFilter(xn.LogSeverity):Version Information')">
+              <span id="M:xn.Log.SetSeverityFilter(xn.LogSeverity):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xn.Log.SetSeverityFilter(xn.LogSeverity):Version Information">
+            <b>Namespace: </b>xn<br /><b>Assembly: </b>OpenNI.net (in OpenNI.net.dll)<br /><b>Assembly Versions: </b>1.0.0.25</blockquote>
+          <hr size="1" />
+        </blockquote>
+      </blockquote>
+    </div>
+    <hr size="1" />
+    <div class="Copyright">
+    </div>
+  </body>
+</html>

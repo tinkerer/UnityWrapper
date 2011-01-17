@@ -1,0 +1,1208 @@
+<html>
+  <head>
+    <title>xnv.SessionManager</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+      a { text-decoration: none }
+
+      div.SideBar {
+        padding-left: 1em;
+        padding-right: 1em;
+        right: 0;
+        float: right;
+        border: thin solid black;
+        background-color: #f2f2f2;
+      }
+    
+      .CollectionTitle { font-weight: bold }
+      .PageTitle { font-size: 150%; font-weight: bold }
+
+      .Summary { }
+      .Signature { }          
+      .Remarks { }
+      .Members { }
+      .Copyright { }
+      
+      .Section { font-size: 125%; font-weight: bold }
+      p.Summary {
+        margin-left: 1em;
+      }
+      .SectionBox { margin-left: 2em }
+      .NamespaceName { font-size: 105%; font-weight: bold }
+      .NamespaceSumary { }
+      .MemberName { font-size: 115%; font-weight: bold; margin-top: 1em }
+      .Subsection { font-size: 105%; font-weight: bold }
+      .SubsectionBox { margin-left: 2em; margin-bottom: 1em }
+
+      .CodeExampleTable { background-color: #f5f5dd; border: thin solid black; padding: .25em; }
+      
+      .TypesListing {
+        border-collapse: collapse;
+      }
+
+      td {
+        vertical-align: top;
+      }
+      th {
+        text-align: left;
+      }
+
+      .TypesListing td { 
+        margin: 0px;  
+        padding: .25em;
+        border: solid gray 1px;
+      }
+
+      .TypesListing th { 
+        margin: 0px;  
+        padding: .25em;
+        background-color: #f2f2f2;
+        border: solid gray 1px;
+      }
+
+      div.Footer {
+        border-top: 1px solid gray;
+        margin-top: 1.5em;
+        padding-top: 0.6em;
+        text-align: center;
+        color: gray;
+      }
+
+      span.NotEntered /* Documentation for this section has not yet been entered */ {
+        font-style: italic;
+        color: red;	
+      }
+
+      div.Header {
+        background: #B0C4DE;
+        border: double;
+        border-color: white;
+        border-width: 7px;
+        padding: 0.5em;
+      }
+
+      div.Header * {
+        font-size: smaller;
+      }
+
+      div.Note {
+      }
+
+      i.ParamRef {
+      }
+
+      i.subtitle {
+      }
+
+      ul.TypeMembersIndex {
+        text-align: left;
+        background: #F8F8F8;
+      }
+
+      ul.TypeMembersIndex li {
+        display: inline;
+        margin:  0.5em;
+      }
+
+      table.HeaderTable {
+      }
+
+      table.SignatureTable {
+      }
+
+      table.Documentation, table.Enumeration, table.TypeDocumentation {
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      table.Documentation tr th, table.TypeMembers tr th, table.Enumeration tr th, table.TypeDocumentation tr th {
+        background: whitesmoke;
+        padding: 0.8em;
+        border: 1px solid gray;
+        text-align: left;
+        vertical-align: bottom;
+      }
+
+      table.Documentation tr td, table.TypeMembers tr td, table.Enumeration tr td, table.TypeDocumentation tr td {
+        padding: 0.5em;
+        border: 1px solid gray;
+        text-align: left;
+        vertical-align: top;
+      }
+
+      table.TypeMembers {
+        border: 1px solid #C0C0C0;
+        width: 100%;
+      }
+
+      table.TypeMembers tr td {
+        background: #F8F8F8;
+        border: white;
+      }
+
+      table.Documentation {
+      }
+
+      table.TypeMembers {
+      }
+
+      div.CodeExample {
+        width: 100%;
+        border: 1px solid #DDDDDD;
+        background-color: #F8F8F8;
+      }
+
+      div.CodeExample p {
+        margin: 0.5em;
+        border-bottom: 1px solid #DDDDDD;
+      }
+
+      div.CodeExample div {
+        margin: 0.5em;
+      }
+
+      h4 {
+        margin-bottom: 0;
+      }
+
+      div.Signature {
+        border: 1px solid #C0C0C0;
+        background: #F2F2F2;
+        padding: 1em;
+      }
+    </style>
+    <script type="text/JavaScript">
+      function toggle_display (block) {
+        var w = document.getElementById (block);
+        var t = document.getElementById (block + ":toggle");
+        if (w.style.display == "none") {
+          w.style.display = "block";
+          t.innerHTML = "⊟";
+        } else {
+          w.style.display = "none";
+          t.innerHTML = "⊞";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="CollectionTitle">
+      <a href="../index.html">XnVNite.net</a> : <a href="index.html">xnv Namespace</a></div>
+    <div class="SideBar">
+      <p>
+        <a href="#T:xnv.SessionManager">Overview</a>
+      </p>
+      <p>
+        <a href="#T:xnv.SessionManager:Signature">Signature</a>
+      </p>
+      <p>
+        <a href="#T:xnv.SessionManager:Docs">Remarks</a>
+      </p>
+      <p>
+        <a href="#Members">Members</a>
+      </p>
+      <p>
+        <a href="#T:xnv.SessionManager:Members">Member Details</a>
+      </p>
+    </div>
+    <h1 class="PageTitle" id="T:xnv.SessionManager">SessionManager  Class</h1>
+    <p class="Summary" id="T:xnv.SessionManager:Summary">
+      <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+    </p>
+    <div id="T:xnv.SessionManager:Signature">
+      <div class="Signature">public class  <b>SessionManager</b> : <a href="../xnv/MessageGenerator.html">MessageGenerator</a></div>
+    </div>
+    <div class="Remarks" id="T:xnv.SessionManager:Docs">
+      <h4 class="Subsection">
+        <a href="javascript:toggle_display('T:xnv.SessionManager:Docs:Remarks')">
+          <span id="T:xnv.SessionManager:Docs:Remarks:toggle">⊟</span> Remarks</a>
+      </h4>
+      <blockquote class="SubsectionBox" id="T:xnv.SessionManager:Docs:Remarks">
+        <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+      </blockquote>
+      <h4 class="Subsection">
+        <a href="javascript:toggle_display('T:xnv.SessionManager:Docs:Version Information')">
+          <span id="T:xnv.SessionManager:Docs:Version Information:toggle">⊟</span> Requirements</a>
+      </h4>
+      <blockquote class="SubsectionBox" id="T:xnv.SessionManager:Docs:Version Information">
+        <b>Namespace: </b>xnv<br /><b>Assembly: </b>XnVNite.net (in XnVNite.net.dll)<br /><b>Assembly Versions: </b>1.3.0.18</blockquote>
+      <h2 class="Section" id="Members">
+        <a href="javascript:toggle_display('_Members')">
+          <span id="_Members:toggle">⊟</span> Members</a>
+      </h2>
+      <blockquote class="SectionBox" id="_Members">
+        <p>
+								See Also: Inherited members from
+								<a href="../xnv/MessageGenerator.html">MessageGenerator</a>.
+							</p>
+        <h3>
+          <a href="javascript:toggle_display('Public Constructors')">
+            <span id="Public Constructors:toggle">⊟</span> Public Constructors</a>
+        </h3>
+        <blockquote id="Public Constructors">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <div>
+                    <b>
+                      <a href="#C:xnv.SessionManager(xn.Context,System.String)">SessionManager</a>
+                    </b>(<a href="javascript:alert(&quot;Documentation not found.&quot;)">xn.Context</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)</div>
+                </td>
+                <td>
+                  <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+                </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <div>
+                    <b>
+                      <a href="#C:xnv.SessionManager(xn.Context,System.String,System.String)">SessionManager</a>
+                    </b>(<a href="javascript:alert(&quot;Documentation not found.&quot;)">xn.Context</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)</div>
+                </td>
+                <td>
+                  <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </blockquote>
+        <h3>
+          <a href="javascript:toggle_display('Public Methods')">
+            <span id="Public Methods:toggle">⊟</span> Public Methods</a>
+        </h3>
+        <blockquote id="Public Methods">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:xnv.SessionManager.EndSession">EndSession</a>
+                  </b>()<blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:xnv.SessionManager.Finalize">Finalize</a>
+                  </b>()<blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:xnv.SessionManager.ForceQuickRefocus(xn.BoundingBox3D@,System.UInt32)">ForceQuickRefocus</a>
+                  </b>(<i>ref</i> <a href="javascript:alert(&quot;Documentation not found.&quot;)">xn.BoundingBox3D</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.UInt32">uint</a>)<blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:xnv.SessionManager.ForceSession(xn.Point3D@)">ForceSession</a>
+                  </b>(<i>ref</i> <a href="javascript:alert(&quot;Documentation not found.&quot;)">xn.Point3D</a>)<blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:xnv.SessionManager.GetFocusPoint">GetFocusPoint</a>
+                  </b>()<nobr> : <a href="javascript:alert(&quot;Documentation not found.&quot;)">xn.Point3D</a></nobr><blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:xnv.SessionManager.GetQuickRefocusArea(System.Single@,System.Single@,System.Single@)">GetQuickRefocusArea</a>
+                  </b>(<i>ref</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Single">float</a>, <i>ref</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Single">float</a>, <i>ref</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Single">float</a>)<blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:xnv.SessionManager.GetQuickRefocusTimeout">GetQuickRefocusTimeout</a>
+                  </b>()<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.UInt32">uint</a></nobr><blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:xnv.SessionManager.IsInSession">IsInSession</a>
+                  </b>()<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a></nobr><blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:xnv.SessionManager.LosePoint(System.UInt32)">LosePoint</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.UInt32">uint</a>)<blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:xnv.SessionManager.LosePoints">LosePoints</a>
+                  </b>()<blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:xnv.SessionManager.SetQuickRefocusArea(xn.BoundingBox3D)">SetQuickRefocusArea</a>
+                  </b>(<a href="javascript:alert(&quot;Documentation not found.&quot;)">xn.BoundingBox3D</a>)<blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:xnv.SessionManager.SetQuickRefocusArea(System.Single,System.Single,System.Single)">SetQuickRefocusArea</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Single">float</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Single">float</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Single">float</a>)<blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:xnv.SessionManager.SetQuickRefocusTimeout(System.UInt32)">SetQuickRefocusTimeout</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.UInt32">uint</a>)<blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:xnv.SessionManager.TrackPoint(xn.Point3D@)">TrackPoint</a>
+                  </b>(<i>ref</i> <a href="javascript:alert(&quot;Documentation not found.&quot;)">xn.Point3D</a>)<blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:xnv.SessionManager.Update(xn.Context)">Update</a>
+                  </b>(<a href="javascript:alert(&quot;Documentation not found.&quot;)">xn.Context</a>)<blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+            </table>
+          </div>
+        </blockquote>
+        <h3>
+          <a href="javascript:toggle_display('Public Events')">
+            <span id="Public Events:toggle">⊟</span> Public Events</a>
+        </h3>
+        <blockquote id="Public Events">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="#E:xnv.SessionManager.SessionEnd">SessionEnd</a>
+                  </b>
+                </td>
+                <td>
+                  <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+                </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="#E:xnv.SessionManager.SessionFocusProgress">SessionFocusProgress</a>
+                  </b>
+                </td>
+                <td>
+                  <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+                </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="#E:xnv.SessionManager.SessionStart">SessionStart</a>
+                  </b>
+                </td>
+                <td>
+                  <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </blockquote>
+      </blockquote>
+    </div>
+    <div class="Members" id="T:xnv.SessionManager:Members">
+      <h2 class="Section" id="MemberDetails">
+        <a href="javascript:toggle_display('_MemberDetails')">
+          <span id="_MemberDetails:toggle">⊟</span> Member Details</a>
+      </h2>
+      <blockquote class="SectionBox" id="_MemberDetails">
+        <h3 id="C:xnv.SessionManager(xn.Context,System.String)">
+          <a href="javascript:toggle_display('C:xnv.SessionManager(xn.Context,System.String):member')">
+            <span id="C:xnv.SessionManager(xn.Context,System.String):member:toggle">⊟</span> SessionManager Constructor</a>
+        </h3>
+        <blockquote id="C:xnv.SessionManager(xn.Context,System.String):member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <div class="Signature">public  <b>SessionManager</b> (<a href="javascript:alert(&quot;Documentation not found.&quot;)">xn.Context</a> context, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> focus)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('C:xnv.SessionManager(xn.Context,System.String):Parameters')">
+              <span id="C:xnv.SessionManager(xn.Context,System.String):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="C:xnv.SessionManager(xn.Context,System.String):Parameters">
+            <dl>
+              <dt>
+                <i>context</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+              <dt>
+                <i>focus</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('C:xnv.SessionManager(xn.Context,System.String):Remarks')">
+              <span id="C:xnv.SessionManager(xn.Context,System.String):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="C:xnv.SessionManager(xn.Context,System.String):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('C:xnv.SessionManager(xn.Context,System.String):Version Information')">
+              <span id="C:xnv.SessionManager(xn.Context,System.String):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="C:xnv.SessionManager(xn.Context,System.String):Version Information">
+            <b>Namespace: </b>xnv<br /><b>Assembly: </b>XnVNite.net (in XnVNite.net.dll)<br /><b>Assembly Versions: </b>1.3.0.18</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="C:xnv.SessionManager(xn.Context,System.String,System.String)">
+          <a href="javascript:toggle_display('C:xnv.SessionManager(xn.Context,System.String,System.String):member')">
+            <span id="C:xnv.SessionManager(xn.Context,System.String,System.String):member:toggle">⊟</span> SessionManager Constructor</a>
+        </h3>
+        <blockquote id="C:xnv.SessionManager(xn.Context,System.String,System.String):member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <div class="Signature">public  <b>SessionManager</b> (<a href="javascript:alert(&quot;Documentation not found.&quot;)">xn.Context</a> context, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> focus, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> quickRefocus)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('C:xnv.SessionManager(xn.Context,System.String,System.String):Parameters')">
+              <span id="C:xnv.SessionManager(xn.Context,System.String,System.String):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="C:xnv.SessionManager(xn.Context,System.String,System.String):Parameters">
+            <dl>
+              <dt>
+                <i>context</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+              <dt>
+                <i>focus</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+              <dt>
+                <i>quickRefocus</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('C:xnv.SessionManager(xn.Context,System.String,System.String):Remarks')">
+              <span id="C:xnv.SessionManager(xn.Context,System.String,System.String):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="C:xnv.SessionManager(xn.Context,System.String,System.String):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('C:xnv.SessionManager(xn.Context,System.String,System.String):Version Information')">
+              <span id="C:xnv.SessionManager(xn.Context,System.String,System.String):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="C:xnv.SessionManager(xn.Context,System.String,System.String):Version Information">
+            <b>Namespace: </b>xnv<br /><b>Assembly: </b>XnVNite.net (in XnVNite.net.dll)<br /><b>Assembly Versions: </b>1.3.0.18</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:xnv.SessionManager.EndSession">
+          <a href="javascript:toggle_display('M:xnv.SessionManager.EndSession:member')">
+            <span id="M:xnv.SessionManager.EndSession:member:toggle">⊟</span> EndSession Method</a>
+        </h3>
+        <blockquote id="M:xnv.SessionManager.EndSession:member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>EndSession</b> ()</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xnv.SessionManager.EndSession:Remarks')">
+              <span id="M:xnv.SessionManager.EndSession:Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xnv.SessionManager.EndSession:Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xnv.SessionManager.EndSession:Version Information')">
+              <span id="M:xnv.SessionManager.EndSession:Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xnv.SessionManager.EndSession:Version Information">
+            <b>Namespace: </b>xnv<br /><b>Assembly: </b>XnVNite.net (in XnVNite.net.dll)<br /><b>Assembly Versions: </b>1.3.0.18</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:xnv.SessionManager.Finalize">
+          <a href="javascript:toggle_display('M:xnv.SessionManager.Finalize:member')">
+            <span id="M:xnv.SessionManager.Finalize:member:toggle">⊟</span> Finalize Method</a>
+        </h3>
+        <blockquote id="M:xnv.SessionManager.Finalize:member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <div class="Signature">
+            <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>Finalize</b> ()</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xnv.SessionManager.Finalize:Remarks')">
+              <span id="M:xnv.SessionManager.Finalize:Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xnv.SessionManager.Finalize:Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xnv.SessionManager.Finalize:Version Information')">
+              <span id="M:xnv.SessionManager.Finalize:Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xnv.SessionManager.Finalize:Version Information">
+            <b>Namespace: </b>xnv<br /><b>Assembly: </b>XnVNite.net (in XnVNite.net.dll)<br /><b>Assembly Versions: </b>1.3.0.18</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:xnv.SessionManager.ForceQuickRefocus(xn.BoundingBox3D@,System.UInt32)">
+          <a href="javascript:toggle_display('M:xnv.SessionManager.ForceQuickRefocus(xn.BoundingBox3D@,System.UInt32):member')">
+            <span id="M:xnv.SessionManager.ForceQuickRefocus(xn.BoundingBox3D@,System.UInt32):member:toggle">⊟</span> ForceQuickRefocus Method</a>
+        </h3>
+        <blockquote id="M:xnv.SessionManager.ForceQuickRefocus(xn.BoundingBox3D@,System.UInt32):member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>ForceQuickRefocus</b> (<i>ref</i> <a href="javascript:alert(&quot;Documentation not found.&quot;)">xn.BoundingBox3D</a> box, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.UInt32">uint</a> nTimeout)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xnv.SessionManager.ForceQuickRefocus(xn.BoundingBox3D@,System.UInt32):Parameters')">
+              <span id="M:xnv.SessionManager.ForceQuickRefocus(xn.BoundingBox3D@,System.UInt32):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xnv.SessionManager.ForceQuickRefocus(xn.BoundingBox3D@,System.UInt32):Parameters">
+            <dl>
+              <dt>
+                <i>box</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+              <dt>
+                <i>nTimeout</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xnv.SessionManager.ForceQuickRefocus(xn.BoundingBox3D@,System.UInt32):Remarks')">
+              <span id="M:xnv.SessionManager.ForceQuickRefocus(xn.BoundingBox3D@,System.UInt32):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xnv.SessionManager.ForceQuickRefocus(xn.BoundingBox3D@,System.UInt32):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xnv.SessionManager.ForceQuickRefocus(xn.BoundingBox3D@,System.UInt32):Version Information')">
+              <span id="M:xnv.SessionManager.ForceQuickRefocus(xn.BoundingBox3D@,System.UInt32):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xnv.SessionManager.ForceQuickRefocus(xn.BoundingBox3D@,System.UInt32):Version Information">
+            <b>Namespace: </b>xnv<br /><b>Assembly: </b>XnVNite.net (in XnVNite.net.dll)<br /><b>Assembly Versions: </b>1.3.0.18</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:xnv.SessionManager.ForceSession(xn.Point3D@)">
+          <a href="javascript:toggle_display('M:xnv.SessionManager.ForceSession(xn.Point3D@):member')">
+            <span id="M:xnv.SessionManager.ForceSession(xn.Point3D@):member:toggle">⊟</span> ForceSession Method</a>
+        </h3>
+        <blockquote id="M:xnv.SessionManager.ForceSession(xn.Point3D@):member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>ForceSession</b> (<i>ref</i> <a href="javascript:alert(&quot;Documentation not found.&quot;)">xn.Point3D</a> focus)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xnv.SessionManager.ForceSession(xn.Point3D@):Parameters')">
+              <span id="M:xnv.SessionManager.ForceSession(xn.Point3D@):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xnv.SessionManager.ForceSession(xn.Point3D@):Parameters">
+            <dl>
+              <dt>
+                <i>focus</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xnv.SessionManager.ForceSession(xn.Point3D@):Remarks')">
+              <span id="M:xnv.SessionManager.ForceSession(xn.Point3D@):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xnv.SessionManager.ForceSession(xn.Point3D@):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xnv.SessionManager.ForceSession(xn.Point3D@):Version Information')">
+              <span id="M:xnv.SessionManager.ForceSession(xn.Point3D@):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xnv.SessionManager.ForceSession(xn.Point3D@):Version Information">
+            <b>Namespace: </b>xnv<br /><b>Assembly: </b>XnVNite.net (in XnVNite.net.dll)<br /><b>Assembly Versions: </b>1.3.0.18</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:xnv.SessionManager.GetFocusPoint">
+          <a href="javascript:toggle_display('M:xnv.SessionManager.GetFocusPoint:member')">
+            <span id="M:xnv.SessionManager.GetFocusPoint:member:toggle">⊟</span> GetFocusPoint Method</a>
+        </h3>
+        <blockquote id="M:xnv.SessionManager.GetFocusPoint:member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <div class="Signature">public <a href="javascript:alert(&quot;Documentation not found.&quot;)">xn.Point3D</a> <b>GetFocusPoint</b> ()</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xnv.SessionManager.GetFocusPoint:Returns')">
+              <span id="M:xnv.SessionManager.GetFocusPoint:Returns:toggle">⊟</span> Returns</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xnv.SessionManager.GetFocusPoint:Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xnv.SessionManager.GetFocusPoint:Remarks')">
+              <span id="M:xnv.SessionManager.GetFocusPoint:Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xnv.SessionManager.GetFocusPoint:Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xnv.SessionManager.GetFocusPoint:Version Information')">
+              <span id="M:xnv.SessionManager.GetFocusPoint:Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xnv.SessionManager.GetFocusPoint:Version Information">
+            <b>Namespace: </b>xnv<br /><b>Assembly: </b>XnVNite.net (in XnVNite.net.dll)<br /><b>Assembly Versions: </b>1.3.0.18</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:xnv.SessionManager.GetQuickRefocusArea(System.Single@,System.Single@,System.Single@)">
+          <a href="javascript:toggle_display('M:xnv.SessionManager.GetQuickRefocusArea(System.Single@,System.Single@,System.Single@):member')">
+            <span id="M:xnv.SessionManager.GetQuickRefocusArea(System.Single@,System.Single@,System.Single@):member:toggle">⊟</span> GetQuickRefocusArea Method</a>
+        </h3>
+        <blockquote id="M:xnv.SessionManager.GetQuickRefocusArea(System.Single@,System.Single@,System.Single@):member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>GetQuickRefocusArea</b> (<i>ref</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Single">float</a> x, <i>ref</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Single">float</a> y, <i>ref</i> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Single">float</a> z)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xnv.SessionManager.GetQuickRefocusArea(System.Single@,System.Single@,System.Single@):Parameters')">
+              <span id="M:xnv.SessionManager.GetQuickRefocusArea(System.Single@,System.Single@,System.Single@):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xnv.SessionManager.GetQuickRefocusArea(System.Single@,System.Single@,System.Single@):Parameters">
+            <dl>
+              <dt>
+                <i>x</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+              <dt>
+                <i>y</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+              <dt>
+                <i>z</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xnv.SessionManager.GetQuickRefocusArea(System.Single@,System.Single@,System.Single@):Remarks')">
+              <span id="M:xnv.SessionManager.GetQuickRefocusArea(System.Single@,System.Single@,System.Single@):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xnv.SessionManager.GetQuickRefocusArea(System.Single@,System.Single@,System.Single@):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xnv.SessionManager.GetQuickRefocusArea(System.Single@,System.Single@,System.Single@):Version Information')">
+              <span id="M:xnv.SessionManager.GetQuickRefocusArea(System.Single@,System.Single@,System.Single@):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xnv.SessionManager.GetQuickRefocusArea(System.Single@,System.Single@,System.Single@):Version Information">
+            <b>Namespace: </b>xnv<br /><b>Assembly: </b>XnVNite.net (in XnVNite.net.dll)<br /><b>Assembly Versions: </b>1.3.0.18</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:xnv.SessionManager.GetQuickRefocusTimeout">
+          <a href="javascript:toggle_display('M:xnv.SessionManager.GetQuickRefocusTimeout:member')">
+            <span id="M:xnv.SessionManager.GetQuickRefocusTimeout:member:toggle">⊟</span> GetQuickRefocusTimeout Method</a>
+        </h3>
+        <blockquote id="M:xnv.SessionManager.GetQuickRefocusTimeout:member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.UInt32">uint</a> <b>GetQuickRefocusTimeout</b> ()</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xnv.SessionManager.GetQuickRefocusTimeout:Returns')">
+              <span id="M:xnv.SessionManager.GetQuickRefocusTimeout:Returns:toggle">⊟</span> Returns</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xnv.SessionManager.GetQuickRefocusTimeout:Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xnv.SessionManager.GetQuickRefocusTimeout:Remarks')">
+              <span id="M:xnv.SessionManager.GetQuickRefocusTimeout:Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xnv.SessionManager.GetQuickRefocusTimeout:Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xnv.SessionManager.GetQuickRefocusTimeout:Version Information')">
+              <span id="M:xnv.SessionManager.GetQuickRefocusTimeout:Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xnv.SessionManager.GetQuickRefocusTimeout:Version Information">
+            <b>Namespace: </b>xnv<br /><b>Assembly: </b>XnVNite.net (in XnVNite.net.dll)<br /><b>Assembly Versions: </b>1.3.0.18</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:xnv.SessionManager.IsInSession">
+          <a href="javascript:toggle_display('M:xnv.SessionManager.IsInSession:member')">
+            <span id="M:xnv.SessionManager.IsInSession:member:toggle">⊟</span> IsInSession Method</a>
+        </h3>
+        <blockquote id="M:xnv.SessionManager.IsInSession:member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> <b>IsInSession</b> ()</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xnv.SessionManager.IsInSession:Returns')">
+              <span id="M:xnv.SessionManager.IsInSession:Returns:toggle">⊟</span> Returns</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xnv.SessionManager.IsInSession:Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xnv.SessionManager.IsInSession:Remarks')">
+              <span id="M:xnv.SessionManager.IsInSession:Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xnv.SessionManager.IsInSession:Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xnv.SessionManager.IsInSession:Version Information')">
+              <span id="M:xnv.SessionManager.IsInSession:Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xnv.SessionManager.IsInSession:Version Information">
+            <b>Namespace: </b>xnv<br /><b>Assembly: </b>XnVNite.net (in XnVNite.net.dll)<br /><b>Assembly Versions: </b>1.3.0.18</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:xnv.SessionManager.LosePoint(System.UInt32)">
+          <a href="javascript:toggle_display('M:xnv.SessionManager.LosePoint(System.UInt32):member')">
+            <span id="M:xnv.SessionManager.LosePoint(System.UInt32):member:toggle">⊟</span> LosePoint Method</a>
+        </h3>
+        <blockquote id="M:xnv.SessionManager.LosePoint(System.UInt32):member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>LosePoint</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.UInt32">uint</a> id)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xnv.SessionManager.LosePoint(System.UInt32):Parameters')">
+              <span id="M:xnv.SessionManager.LosePoint(System.UInt32):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xnv.SessionManager.LosePoint(System.UInt32):Parameters">
+            <dl>
+              <dt>
+                <i>id</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xnv.SessionManager.LosePoint(System.UInt32):Remarks')">
+              <span id="M:xnv.SessionManager.LosePoint(System.UInt32):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xnv.SessionManager.LosePoint(System.UInt32):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xnv.SessionManager.LosePoint(System.UInt32):Version Information')">
+              <span id="M:xnv.SessionManager.LosePoint(System.UInt32):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xnv.SessionManager.LosePoint(System.UInt32):Version Information">
+            <b>Namespace: </b>xnv<br /><b>Assembly: </b>XnVNite.net (in XnVNite.net.dll)<br /><b>Assembly Versions: </b>1.3.0.18</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:xnv.SessionManager.LosePoints">
+          <a href="javascript:toggle_display('M:xnv.SessionManager.LosePoints:member')">
+            <span id="M:xnv.SessionManager.LosePoints:member:toggle">⊟</span> LosePoints Method</a>
+        </h3>
+        <blockquote id="M:xnv.SessionManager.LosePoints:member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>LosePoints</b> ()</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xnv.SessionManager.LosePoints:Remarks')">
+              <span id="M:xnv.SessionManager.LosePoints:Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xnv.SessionManager.LosePoints:Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xnv.SessionManager.LosePoints:Version Information')">
+              <span id="M:xnv.SessionManager.LosePoints:Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xnv.SessionManager.LosePoints:Version Information">
+            <b>Namespace: </b>xnv<br /><b>Assembly: </b>XnVNite.net (in XnVNite.net.dll)<br /><b>Assembly Versions: </b>1.3.0.18</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="E:xnv.SessionManager.SessionEnd">
+          <a href="javascript:toggle_display('E:xnv.SessionManager.SessionEnd:member')">
+            <span id="E:xnv.SessionManager.SessionEnd:member:toggle">⊟</span> SessionEnd Event</a>
+        </h3>
+        <blockquote id="E:xnv.SessionManager.SessionEnd:member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <div class="Signature">public event <a href="../xnv/SessionManager+SessionEndHandler.html">SessionManager.SessionEndHandler</a> <b>SessionEnd</b> </div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('E:xnv.SessionManager.SessionEnd:Remarks')">
+              <span id="E:xnv.SessionManager.SessionEnd:Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="E:xnv.SessionManager.SessionEnd:Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('E:xnv.SessionManager.SessionEnd:Version Information')">
+              <span id="E:xnv.SessionManager.SessionEnd:Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="E:xnv.SessionManager.SessionEnd:Version Information">
+            <b>Namespace: </b>xnv<br /><b>Assembly: </b>XnVNite.net (in XnVNite.net.dll)<br /><b>Assembly Versions: </b>1.3.0.18</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="E:xnv.SessionManager.SessionFocusProgress">
+          <a href="javascript:toggle_display('E:xnv.SessionManager.SessionFocusProgress:member')">
+            <span id="E:xnv.SessionManager.SessionFocusProgress:member:toggle">⊟</span> SessionFocusProgress Event</a>
+        </h3>
+        <blockquote id="E:xnv.SessionManager.SessionFocusProgress:member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <div class="Signature">public event <a href="../xnv/SessionManager+SessionFocusProgressHandler.html">SessionManager.SessionFocusProgressHandler</a> <b>SessionFocusProgress</b> </div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('E:xnv.SessionManager.SessionFocusProgress:Remarks')">
+              <span id="E:xnv.SessionManager.SessionFocusProgress:Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="E:xnv.SessionManager.SessionFocusProgress:Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('E:xnv.SessionManager.SessionFocusProgress:Version Information')">
+              <span id="E:xnv.SessionManager.SessionFocusProgress:Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="E:xnv.SessionManager.SessionFocusProgress:Version Information">
+            <b>Namespace: </b>xnv<br /><b>Assembly: </b>XnVNite.net (in XnVNite.net.dll)<br /><b>Assembly Versions: </b>1.3.0.18</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="E:xnv.SessionManager.SessionStart">
+          <a href="javascript:toggle_display('E:xnv.SessionManager.SessionStart:member')">
+            <span id="E:xnv.SessionManager.SessionStart:member:toggle">⊟</span> SessionStart Event</a>
+        </h3>
+        <blockquote id="E:xnv.SessionManager.SessionStart:member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <div class="Signature">public event <a href="../xnv/SessionManager+SessionStartHandler.html">SessionManager.SessionStartHandler</a> <b>SessionStart</b> </div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('E:xnv.SessionManager.SessionStart:Remarks')">
+              <span id="E:xnv.SessionManager.SessionStart:Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="E:xnv.SessionManager.SessionStart:Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('E:xnv.SessionManager.SessionStart:Version Information')">
+              <span id="E:xnv.SessionManager.SessionStart:Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="E:xnv.SessionManager.SessionStart:Version Information">
+            <b>Namespace: </b>xnv<br /><b>Assembly: </b>XnVNite.net (in XnVNite.net.dll)<br /><b>Assembly Versions: </b>1.3.0.18</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:xnv.SessionManager.SetQuickRefocusArea(xn.BoundingBox3D)">
+          <a href="javascript:toggle_display('M:xnv.SessionManager.SetQuickRefocusArea(xn.BoundingBox3D):member')">
+            <span id="M:xnv.SessionManager.SetQuickRefocusArea(xn.BoundingBox3D):member:toggle">⊟</span> SetQuickRefocusArea Method</a>
+        </h3>
+        <blockquote id="M:xnv.SessionManager.SetQuickRefocusArea(xn.BoundingBox3D):member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>SetQuickRefocusArea</b> (<a href="javascript:alert(&quot;Documentation not found.&quot;)">xn.BoundingBox3D</a> box)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xnv.SessionManager.SetQuickRefocusArea(xn.BoundingBox3D):Parameters')">
+              <span id="M:xnv.SessionManager.SetQuickRefocusArea(xn.BoundingBox3D):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xnv.SessionManager.SetQuickRefocusArea(xn.BoundingBox3D):Parameters">
+            <dl>
+              <dt>
+                <i>box</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xnv.SessionManager.SetQuickRefocusArea(xn.BoundingBox3D):Remarks')">
+              <span id="M:xnv.SessionManager.SetQuickRefocusArea(xn.BoundingBox3D):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xnv.SessionManager.SetQuickRefocusArea(xn.BoundingBox3D):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xnv.SessionManager.SetQuickRefocusArea(xn.BoundingBox3D):Version Information')">
+              <span id="M:xnv.SessionManager.SetQuickRefocusArea(xn.BoundingBox3D):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xnv.SessionManager.SetQuickRefocusArea(xn.BoundingBox3D):Version Information">
+            <b>Namespace: </b>xnv<br /><b>Assembly: </b>XnVNite.net (in XnVNite.net.dll)<br /><b>Assembly Versions: </b>1.3.0.18</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:xnv.SessionManager.SetQuickRefocusArea(System.Single,System.Single,System.Single)">
+          <a href="javascript:toggle_display('M:xnv.SessionManager.SetQuickRefocusArea(System.Single,System.Single,System.Single):member')">
+            <span id="M:xnv.SessionManager.SetQuickRefocusArea(System.Single,System.Single,System.Single):member:toggle">⊟</span> SetQuickRefocusArea Method</a>
+        </h3>
+        <blockquote id="M:xnv.SessionManager.SetQuickRefocusArea(System.Single,System.Single,System.Single):member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>SetQuickRefocusArea</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Single">float</a> x, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Single">float</a> y, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Single">float</a> z)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xnv.SessionManager.SetQuickRefocusArea(System.Single,System.Single,System.Single):Parameters')">
+              <span id="M:xnv.SessionManager.SetQuickRefocusArea(System.Single,System.Single,System.Single):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xnv.SessionManager.SetQuickRefocusArea(System.Single,System.Single,System.Single):Parameters">
+            <dl>
+              <dt>
+                <i>x</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+              <dt>
+                <i>y</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+              <dt>
+                <i>z</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xnv.SessionManager.SetQuickRefocusArea(System.Single,System.Single,System.Single):Remarks')">
+              <span id="M:xnv.SessionManager.SetQuickRefocusArea(System.Single,System.Single,System.Single):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xnv.SessionManager.SetQuickRefocusArea(System.Single,System.Single,System.Single):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xnv.SessionManager.SetQuickRefocusArea(System.Single,System.Single,System.Single):Version Information')">
+              <span id="M:xnv.SessionManager.SetQuickRefocusArea(System.Single,System.Single,System.Single):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xnv.SessionManager.SetQuickRefocusArea(System.Single,System.Single,System.Single):Version Information">
+            <b>Namespace: </b>xnv<br /><b>Assembly: </b>XnVNite.net (in XnVNite.net.dll)<br /><b>Assembly Versions: </b>1.3.0.18</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:xnv.SessionManager.SetQuickRefocusTimeout(System.UInt32)">
+          <a href="javascript:toggle_display('M:xnv.SessionManager.SetQuickRefocusTimeout(System.UInt32):member')">
+            <span id="M:xnv.SessionManager.SetQuickRefocusTimeout(System.UInt32):member:toggle">⊟</span> SetQuickRefocusTimeout Method</a>
+        </h3>
+        <blockquote id="M:xnv.SessionManager.SetQuickRefocusTimeout(System.UInt32):member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>SetQuickRefocusTimeout</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.UInt32">uint</a> nMilliseconds)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xnv.SessionManager.SetQuickRefocusTimeout(System.UInt32):Parameters')">
+              <span id="M:xnv.SessionManager.SetQuickRefocusTimeout(System.UInt32):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xnv.SessionManager.SetQuickRefocusTimeout(System.UInt32):Parameters">
+            <dl>
+              <dt>
+                <i>nMilliseconds</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xnv.SessionManager.SetQuickRefocusTimeout(System.UInt32):Remarks')">
+              <span id="M:xnv.SessionManager.SetQuickRefocusTimeout(System.UInt32):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xnv.SessionManager.SetQuickRefocusTimeout(System.UInt32):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xnv.SessionManager.SetQuickRefocusTimeout(System.UInt32):Version Information')">
+              <span id="M:xnv.SessionManager.SetQuickRefocusTimeout(System.UInt32):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xnv.SessionManager.SetQuickRefocusTimeout(System.UInt32):Version Information">
+            <b>Namespace: </b>xnv<br /><b>Assembly: </b>XnVNite.net (in XnVNite.net.dll)<br /><b>Assembly Versions: </b>1.3.0.18</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:xnv.SessionManager.TrackPoint(xn.Point3D@)">
+          <a href="javascript:toggle_display('M:xnv.SessionManager.TrackPoint(xn.Point3D@):member')">
+            <span id="M:xnv.SessionManager.TrackPoint(xn.Point3D@):member:toggle">⊟</span> TrackPoint Method</a>
+        </h3>
+        <blockquote id="M:xnv.SessionManager.TrackPoint(xn.Point3D@):member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>TrackPoint</b> (<i>ref</i> <a href="javascript:alert(&quot;Documentation not found.&quot;)">xn.Point3D</a> position)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xnv.SessionManager.TrackPoint(xn.Point3D@):Parameters')">
+              <span id="M:xnv.SessionManager.TrackPoint(xn.Point3D@):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xnv.SessionManager.TrackPoint(xn.Point3D@):Parameters">
+            <dl>
+              <dt>
+                <i>position</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xnv.SessionManager.TrackPoint(xn.Point3D@):Remarks')">
+              <span id="M:xnv.SessionManager.TrackPoint(xn.Point3D@):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xnv.SessionManager.TrackPoint(xn.Point3D@):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xnv.SessionManager.TrackPoint(xn.Point3D@):Version Information')">
+              <span id="M:xnv.SessionManager.TrackPoint(xn.Point3D@):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xnv.SessionManager.TrackPoint(xn.Point3D@):Version Information">
+            <b>Namespace: </b>xnv<br /><b>Assembly: </b>XnVNite.net (in XnVNite.net.dll)<br /><b>Assembly Versions: </b>1.3.0.18</blockquote>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:xnv.SessionManager.Update(xn.Context)">
+          <a href="javascript:toggle_display('M:xnv.SessionManager.Update(xn.Context):member')">
+            <span id="M:xnv.SessionManager.Update(xn.Context):member:toggle">⊟</span> Update Method</a>
+        </h3>
+        <blockquote id="M:xnv.SessionManager.Update(xn.Context):member">
+          <p class="Summary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </p>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>Update</b> (<a href="javascript:alert(&quot;Documentation not found.&quot;)">xn.Context</a> context)</div>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xnv.SessionManager.Update(xn.Context):Parameters')">
+              <span id="M:xnv.SessionManager.Update(xn.Context):Parameters:toggle">⊟</span> Parameters</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xnv.SessionManager.Update(xn.Context):Parameters">
+            <dl>
+              <dt>
+                <i>context</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xnv.SessionManager.Update(xn.Context):Remarks')">
+              <span id="M:xnv.SessionManager.Update(xn.Context):Remarks:toggle">⊟</span> Remarks</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xnv.SessionManager.Update(xn.Context):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">
+            <a href="javascript:toggle_display('M:xnv.SessionManager.Update(xn.Context):Version Information')">
+              <span id="M:xnv.SessionManager.Update(xn.Context):Version Information:toggle">⊟</span> Requirements</a>
+          </h4>
+          <blockquote class="SubsectionBox" id="M:xnv.SessionManager.Update(xn.Context):Version Information">
+            <b>Namespace: </b>xnv<br /><b>Assembly: </b>XnVNite.net (in XnVNite.net.dll)<br /><b>Assembly Versions: </b>1.3.0.18</blockquote>
+          <hr size="1" />
+        </blockquote>
+      </blockquote>
+    </div>
+    <hr size="1" />
+    <div class="Copyright">
+    </div>
+  </body>
+</html>

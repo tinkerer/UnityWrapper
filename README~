@@ -1,0 +1,12 @@
+Unity Wrapper v1.01 Alpha
+------------------------
+
+Release Notes:
+--------------
+This is the new wrapper for Unity using the OpenNI and NITE .NET wrappers. 
+
+This Unity + OpenNI/NITE integration is being created by Amir Hirsch (tinkerer on freenode and git). I copied most of the code out of the UserTracker.NET example code.
+
+This release is not exactly at 100% working, though it seems to start up the sensor correctly. 
+
+Unity seems to freeze every second time you run this.
