@@ -205,7 +205,15 @@ using System.Threading;using System.Text; using xn;using xnv;public class N
             this.joints.Remove(id);
         }
 
-		void Update()
+	public Transform pLHand;
+	public Transform pRHand;
+	public Transform pLElbow;
+	public Transform pRElbow;
+	public Transform pHead;
+	
+	
+	public Vector3 bias;
+	public float scale;	void Update()
 	{
 		bool doUpdate = true;
 		if (this.shouldRun)
@@ -228,21 +236,37 @@ using System.Threading;using System.Text; using xn;using xnv;public class N
                     	if (this.skeletonCapbility.IsTracking(user))
                     	{
                     		doUpdate = false;
-                    		Debug.Log("here we go");
-							GetJoints(user);
-							this.UpdateAvatar(user);
+                    		//Debug.Log("here we go");
 							
+							
+							//GetJoints(user);
+							//this.UpdateAvatar(user);
+							MoveTransform(user, SkeletonJoint.Head, pHead);
+							MoveTransform(user, SkeletonJoint.RightHand, pRHand);
+							MoveTransform(user, SkeletonJoint.RightElbow, pRElbow);
+							MoveTransform(user, SkeletonJoint.LeftHand, pLHand);
+							MoveTransform(user, SkeletonJoint.LeftElbow, pLElbow);
+
 							
                     	}
                     }
 		}
 		if (doUpdate)
 		{
-			UpdateUserMap();
+		//	UpdateUserMap();
 		}
 	}
 	
 	
+	void MoveTransform( uint userId, SkeletonJoint joint, Transform dest)
+    {
+		SkeletonJointPosition pos = new SkeletonJointPosition();
+	    this.skeletonCapbility.GetSkeletonJointPosition(userId, joint, ref pos);
+   	 	Vector3 v3pos = new Vector3(pos.position.X, pos.position.Y, pos.position.Z);
+    	dest.position = (v3pos / scale) + bias;
+            				
+							
+    }
 	void UpdateAvatar(uint userId)
     {
         //root.rotation = Quaternion.LookRotation(Vector3.forward);
@@ -262,11 +286,19 @@ using System.Threading;using System.Text; using xn;using xnv;public class N
 	
 	  void TransformBone(uint userId, SkeletonJoint joint, Transform dest, bool move)
     {
+    	
         SkeletonJointPosition sjp = this.joints[userId][joint];
         Point3D pos = sjp.position;
-        SkeletonJointOrientation ori = new SkeletonJointOrientation();
-        this.skeletonCapbility.GetSkeletonJointOrientation(userId,joint, ori);
-        float [] m = ori.Orientation.elements;                       
+        
+        //Debug.Log("joint " + joint + "x " + pos.X + " y " + pos.Y + " z " + pos.Z);
+        
+      //  SkeletonJointOrientation ori = new SkeletonJointOrientation();
+      //  this.skeletonCapbility.GetSkeletonJointOrientation(userId, joint, out ori);
+       /* float [] m = ori.Orientation.elements;                       
+        
+        //Debug.Log(m.Length);
+        
+        
         // only modify joint if confidence is high enough in this frame
         if (ori.Confidence > 0.5)
         {
@@ -291,7 +323,11 @@ using System.Threading;using System.Text; using xn;using xnv;public class N
 //			dest.position = new Vector3(trans.pos.x/1000, trans.pos.y/1000 -1, -trans.pos.z/1000);
 			dest.position = new Vector3(pos.X/1000, pos.Y/1000 -1, -pos.Z/1000);
 
-		}
+		
+        }
+       */
+        
+        		
     }
 	
 	
@@ -353,7 +389,7 @@ using System.Threading;using System.Text; using xn;using xnv;public class N
 		
 		//this.depth.GetMetaData(depthMD);
 		
-		
+
 		DepthMap = this.depth.GetDepthMap();
 		LabelMap = this.userGenerator.GetUserPixels(0).GetSceneMap();
 		
@@ -454,43 +490,6 @@ using System.Threading;using System.Text; using xn;using xnv;public class N
     }
     
     
-    /*
-     private unsafe void CalcHist(DepthMetaData depthMD)
-		{
-			// reset
-			for (int i = 0; i < this.histogram.Length; ++i)
-				this.histogram[i] = 0;
-
-			ushort* pDepth = (ushort*)depthMD.DepthMapPtr.ToPointer();
-
-			int points = 0;
-			for (int y = 0; y < depthMD.YRes; ++y)
-			{
-				for (int x = 0; x < depthMD.XRes; ++x, ++pDepth)
-				{
-					ushort depthVal = *pDepth;
-					if (depthVal != 0)
-					{
-						this.histogram[depthVal]++;
-						points++;
-					}
-				}
-			}
-
-			for (int i = 1; i < this.histogram.Length; i++)
-			{
-				this.histogram[i] += this.histogram[i-1];
-			}
-
-			if (points > 0)
-			{
-				for (int i = 1; i < this.histogram.Length; i++)
-				{
-					this.histogram[i] = (int)(256 * (1.0f - (this.histogram[i] / (float)points)));
-				}
-			}
-		}
-*/
 
     
 }
