@@ -37,6 +37,10 @@ using System.Threading;using System.Text; using xn;using xnv;public class N
 	public Transform rightCollar;
     public Transform head;
 	
+	
+	
+
+	
 	public Vector3 bias;
 	public float scale;
         
@@ -126,7 +130,7 @@ using System.Threading;using System.Text; using xn;using xnv;public class N
                     		doUpdate = false;
                     		//Debug.Log("here we go");
 							
-							
+
 							//GetJoints(user);
 							//this.UpdateAvatar(user);
 							MoveTransform(user, SkeletonJoint.Head, head);
