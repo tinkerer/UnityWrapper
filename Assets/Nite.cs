@@ -273,7 +273,7 @@ using System.Threading;using System.Text; using xn;using xnv;public class N
     {
 		SkeletonJointPosition pos = new SkeletonJointPosition();
 	    this.skeletonCapbility.GetSkeletonJointPosition(userId, joint, ref pos);
-   	 	Vector3 v3pos = new Vector3(pos.position.X, pos.position.Y, pos.position.Z);
+   	 	Vector3 v3pos = new Vector3(pos.position.X, pos.position.Y, -pos.position.Z);
     	dest.position = (v3pos / scale) + bias;
             				
 							
@@ -339,6 +339,7 @@ using System.Threading;using System.Text; using xn;using xnv;public class N
 
             // Some smoothing
             dest.rotation = Quaternion.Slerp(dest.rotation, newRotation, Time.deltaTime * 20);
+                 
         }
 		
 		//if (move)

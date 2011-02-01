@@ -12,8 +12,10 @@ public class carryable : MonoBehaviour {
 	void Update () {
 		if (hand1 && hand2)
 		{
+			rigidbody.freezeRotation = true;
 			transform.position = Vector3.Lerp(hand1.position, hand2.position, .5f);
 		}
+		
 	}
 	
 	public Transform hand1;
@@ -45,11 +47,16 @@ public class carryable : MonoBehaviour {
 			if (hit.transform == hand1)
 			{
 				hand1 = null;
+		
+			rigidbody.freezeRotation = false;
+		
 				Debug.Log("Hand1 OUT");
 			}	
 			if (hit.transform == hand2)
 			{
 				hand2 = null;
+					rigidbody.freezeRotation = false;
+		
 				Debug.Log("Hand2 OUT");
 			}	
 		}
