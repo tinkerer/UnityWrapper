@@ -1,12 +1,3 @@
-Unity Wrapper v1.01 Alpha
-------------------------
+The latest version of the Unity Wrapper for Kinect is available at zigfu.com or github.com/zigfu.
 
-Release Notes:
---------------
-This is the new wrapper for Unity using the OpenNI and NITE .NET wrappers. 
-
-This Unity + OpenNI/NITE integration is being created by Amir Hirsch (tinkerer on freenode and git). I copied most of the code out of the UserTracker.NET example code.
-
-This release is not exactly at 100% working, though it seems to start up the sensor correctly. 
-
-Unity seems to freeze every few times I run this.
+I have preserved my old code in the preZigFu branch of this git.
